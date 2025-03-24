@@ -1,9 +1,13 @@
-import { Button } from "../components/index";
+import { Mentorsbadge } from '../components/index'
+import React from 'react'
 
-export default function Home() {
+function page() {
   return (
-    <div className="bg-white w-full h-full">
-      hello
-    </div>
-  );
+    <section className='w-full pt-16 h-full'>
+      <Mentorsbadge />
+    </section>
+  )
 }
+
+export default page
+
