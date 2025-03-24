@@ -1,5 +1,4 @@
 import React from 'react'
-import { Input } from '../ui/input'
 import Filtercard from './Filtercard'
 
 const filter = [
