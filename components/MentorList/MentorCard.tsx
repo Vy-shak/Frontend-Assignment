@@ -16,7 +16,7 @@ interface mentorCard {
 
 function MentorCard({ profileImg, rating, reviews, Name, role, verified, description}: mentorCard) {
   return (
-    <div className='w-full flex justify-between items-stretch bg-white outline-1 outline-UIslate-300 rounded-lg px-6 py-6'>
+    <div className='w-full cursor-pointer flex justify-between items-stretch bg-white outline-1 outline-UIslate-300 rounded-lg px-6 py-6'>
       <div className='flex gap-x-5 justify-between items-start w-full'>
          <Image alt='profileImg' className='h-full  rounded-lg object-contain ' src={profileImg} />
         <div className='flex justify-stretch items-center w-full h-full gap-y-3  flex-col'>

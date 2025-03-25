@@ -9,7 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary:"bg-UIslate-700 text-white outline-1 text-xs font-semibold text-xs outline-UIslate-700",
+        primary:"bg-UIslate-700 cursor-pointer text-white outline-1 text-xs font-semibold text-xs outline-UIslate-700",
         default:
           "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
         destructive:
