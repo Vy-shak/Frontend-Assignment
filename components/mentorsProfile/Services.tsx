@@ -17,12 +17,12 @@ function Services() {
                     {dummyServices.map((item) => {
                         if (activeService===serviceTypes.all) {
                             return (
-                                <ServiceCard key={item.id} details={item.details} description={item.description} serviceHead={item.serviceHead} type={item.type} />
+                                <ServiceCard id={item.id} key={item.id} details={item.details} description={item.description} profileImg={item.profileImg}  serviceHead={item.serviceHead} type={item.type} />
                             )
                         }
                         else if (activeService===item.type) {
                             return (
-                                <ServiceCard key={item.id} details={item.details} description={item.description} serviceHead={item.serviceHead} type={item.type} />
+                                <ServiceCard id={item.id} key={item.id} details={item.details} description={item.description} profileImg={item.profileImg} serviceHead={item.serviceHead} type={item.type} />
                             )
                         }
                     })}

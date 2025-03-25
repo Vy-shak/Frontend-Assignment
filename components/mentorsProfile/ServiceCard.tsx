@@ -2,26 +2,16 @@ import { StaticImageData } from 'next/image'
 import React from 'react'
 import { Button } from '../ui/button'
 import Serviceblock from './minor/Servicebloc'
-import { serviceTypes } from '@/app/@types/state/Service'
+import Image from 'next/image'
+import { serviceTypes,Servicecardtype } from '@/app/@types/state/Service'
 
-interface ServiceDetail {
-    id: string
-    type: string;
-    icon: StaticImageData
-    text: string
-}
 
-interface ServiceCard {
-    type: serviceTypes;
-    serviceHead: string;
-    description: string;
-    details: ServiceDetail[];
-}
 
-function ServiceCard({ serviceHead, description, details }: ServiceCard) {
+function ServiceCard({ serviceHead, profileImg, description, details }: Servicecardtype) {
     return (
-        <div className='bg-white flexStart gap-y-6 flex-col  outline-1 p-3 outline-UIslate-300 rounded-lg'>
+        <div className='bg-white h-fit  flexStart gap-y-6 flex-col  outline-1 p-6 outline-UIslate-300 rounded-lg'>
             <div className='w-full flex-col flexStart gap-y-8'>
+                {profileImg&&<Image className='w-full' alt='profileimg' src={profileImg}/>}
                 <div className='w-full flex justify-between items-center'>
                     <div className='flexStart max-w-60'>
                     <span className='text-xl text-UIslate-700 font-semibold'>{serviceHead}</span>

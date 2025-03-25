@@ -27,9 +27,10 @@ import BlueClock from "./Icons/Clockblue.svg"
 import Block from "./Icons/Block.svg"
 import Product from "./Icons/Purchase.svg"
 import WebinarIcon from "./Icons/WebinarIcon.svg"
+import Tumbnail2 from "./Images/Mentorprofile/Tumbnail.svg"
 
 
 
 
 
-export {MentorIcon,BookingIcon, Product,WebinarIcon, RupeeIcon,MessageIcon,Block,BlueClock,VideoIcon, Arrowback, LinkdinIcon, Mediumicon,InstagramIcon,ShareIcon,Xicon, ClockIcon, SearchIcon, CloseIcon, TrendingIcon, Jhony,Dev,Rishi,Mistry, Bellicon, VerifyIcon, ProfileImg, CheveronDown,JobIcon,PriorityIcon}
+export {MentorIcon,BookingIcon, Product,WebinarIcon, Tumbnail2, RupeeIcon,MessageIcon,Block,BlueClock,VideoIcon, Arrowback, LinkdinIcon, Mediumicon,InstagramIcon,ShareIcon,Xicon, ClockIcon, SearchIcon, CloseIcon, TrendingIcon, Jhony,Dev,Rishi,Mistry, Bellicon, VerifyIcon, ProfileImg, CheveronDown,JobIcon,PriorityIcon}

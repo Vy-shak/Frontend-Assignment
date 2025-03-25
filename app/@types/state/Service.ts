@@ -1,4 +1,6 @@
-enum serviceTypes {
+import { StaticImageData } from "next/image";
+
+export enum serviceTypes {
     all= "all",
     call = "1:1 Call",
     dm = "Priority DM",
@@ -6,5 +8,18 @@ enum serviceTypes {
     webinar = "Webinar",
     product = "Digital Product",
 }
+export interface ServiceDetail {
+    id:string
+    type: string;
+    icon: StaticImageData 
+    text:string
+}
 
-export {serviceTypes}
+export interface Servicecardtype {
+    id:number
+    profileImg?:StaticImageData
+    type: serviceTypes;
+    serviceHead: string;
+    description: string;
+    details: ServiceDetail[];
+  }
