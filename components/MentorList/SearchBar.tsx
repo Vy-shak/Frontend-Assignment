@@ -64,6 +64,7 @@ function SearchBar() {
   const handleHistory = ()=>{
     if (searchRef.current?.value) {
       const val = searchRef.current?.value;
+      searchRef.current.value = ""
       Sethistory((prev)=>[...prev,val])
     }
     setSearchon(false);
