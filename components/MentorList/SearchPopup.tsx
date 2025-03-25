@@ -32,7 +32,7 @@ function SearchPopup({ history }: searchref) {
                     {history.length > 0 && <div className='w-full flex-col gap-y-2  flexStart'>
                         <span className='text-sm text-UIslate-900 font-semibold'>Recent search</span>
                         {history.map((item, index) => {
-                            if (index <= 4) {
+                            if (index <= 2) {
                                 return <Trending type='recent' key={index} text={item} />;
                             }
                             return null;
