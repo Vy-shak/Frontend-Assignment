@@ -1,5 +1,5 @@
 import React from 'react'
-import { MentorsPcard,Backcard } from '../../components/index'
+import { MentorsPcard,Backcard,Services } from '../../components/index'
 
 
 const page = () => {
@@ -10,6 +10,7 @@ const page = () => {
         <MentorsPcard/>
         </div>
         <section className='w-full gap-y-10  scroll-smooth flex px-18 flex-col justify-start items-center'>
+            <Services/>
         </section>
     </section>
   )
