@@ -54,7 +54,7 @@ function page() {
   return (
     <section className='w-full flex flex-col justify-start items-center pt-16 h-full'>
       <Mentorsbadge />
-      <section className='w-full flex px-18 flex-col justify-start items-center'>
+      <section className='w-full overflow-hidden scroll-smoothss flex px-18 flex-col justify-start items-center'>
         <SearchBar />
         <div className='w-full flexSide gap-y-4 flex-col'>
           {mentors.map((item)=>(
