@@ -1,43 +1,42 @@
 "use client"
 import React, { useState } from 'react'
-import { useRef } from 'react';
 import Servicebtn from './minor/Servicebtn';
-import { div } from 'motion/react-client';
+import { serviceTypes } from '@/app/@types/state/Service';
 
 const serviceTabs = [
     {
         id: 1,
-        name: "All",
+        name: serviceTypes.all,
     },
     {
         id: 2,
-        name: "1:1 Call",
+        name: serviceTypes.call,
     },
     {
         id: 3,
-        name: "Priority DM",
+        name: serviceTypes.dm,
     },
     {
         id: 4,
-        name: "Package",
+        name: serviceTypes.package,
     },
     {
         id: 5,
-        name: "Webinar",
+        name: serviceTypes.webinar,
     },
     {
         id: 6,
-        name: "Digital Product",
+        name: serviceTypes.product,
     },
 ];
 
 function ServiceTab() {
-    const [activeTab, setActivetab] = useState(1);
+
     return (
         <div className='w-full flexSide'>
             <div className='w-fit flexSide gap-x-2 bg-UIslate-100 px-2 rounded-md py-1'>
                 {serviceTabs.map((item) => (
-                    <Servicebtn activeTab={activeTab} id={item.id} setActiveTab={setActivetab} key={item.id} text={item.name} />
+                    <Servicebtn  key={item.id} text={item.name} />
                 ))}
             </div>
         </div>

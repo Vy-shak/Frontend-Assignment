@@ -5,7 +5,7 @@ enum serviceTypes {
     call = "1:1 Call",
     dm = "Priority DM",
     package = "Package",
-    webinae = "Webinar",
+    webinar = "Webinar",
     product = "Digital Product",
   }
 
@@ -33,7 +33,7 @@ enum serviceTypes {
       details: [
         { id: "d1-1", type: "Service type", icon: VideoIcon, text: "1:1 Call" },
         { id: "d1-2", type: "Duration", icon: BlueClock, text: "30 min" },
-        { id: "d1-3", type: "Amount", icon: RupeeIcon, text: "₹300" },
+        { id: "d1-3", type: "Amount", icon: RupeeIcon, text: "300" },
       ],
     },
     {
@@ -44,7 +44,7 @@ enum serviceTypes {
       details: [
         { id: "d2-1", type: "Service type", icon: MessageIcon, text: "Priority DM" },
         { id: "d2-2", type: "Replies", icon: BlueClock, text: "In 1 day" },
-        { id: "d2-3", type: "Amount", icon: RupeeIcon, text: "₹100" },
+        { id: "d2-3", type: "Amount", icon: RupeeIcon, text: "100" },
       ],
     },
     {
@@ -55,18 +55,18 @@ enum serviceTypes {
       details: [
         { id: "d3-1", type: "Service type", icon: Block, text: "Package" },
         { id: "d3-2", type: "Duration", icon: BlueClock, text: "1 month" },
-        { id: "d3-3", type: "Amount", icon: RupeeIcon, text: "₹1000" },
+        { id: "d3-3", type: "Amount", icon: RupeeIcon, text: "1000" },
       ],
     },
     {
       id: 4,
-      type: serviceTypes.webinae,
+      type: serviceTypes.webinar,
       serviceHead: "Interview tips and tricks advice",
       description: "Practical strategies to boost your interview confidence.",
       details: [
         { id: "d4-1", type: "Service type", icon: WebinarIcon, text: "Webinar" },
         { id: "d4-2", type: "Date", icon: BlueClock, text: "On 28th Oct" },
-        { id: "d4-3", type: "Amount", icon: RupeeIcon, text: "₹1000" },
+        { id: "d4-3", type: "Amount", icon: RupeeIcon, text: "1000" },
       ],
     },
     {
@@ -76,7 +76,7 @@ enum serviceTypes {
       description: "To strengthen your SQL and data skills",
       details: [
         { id: "d5-1", type: "Service type", icon: Product, text: "Digital product" },
-        { id: "d5-2", type: "Amount", icon: RupeeIcon, text: "₹500" },
+        { id: "d5-2", type: "Amount", icon: RupeeIcon, text: "500" },
       ],
     },
   ];

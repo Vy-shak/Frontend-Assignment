@@ -1,23 +1,23 @@
 import React from 'react'
 import { Dispatch,SetStateAction } from 'react'
 import {motion} from "motion/react"
+import { useActiveServicesStore } from '@/lib/states/activeServices'
+import { serviceTypes } from '@/app/@types/state/Service'
 
 interface btn {
-    id:number,
-    text:string,
-    setActiveTab:Dispatch<SetStateAction<number>>,
-    activeTab:number
+    text:serviceTypes,
 }
 
-function Servicebtn({text,id,setActiveTab,activeTab}:btn) {
+function Servicebtn({text}:btn) {
+    const {activeService,setActiveService} = useActiveServicesStore()
     const handleClick = ()=>{
-        setActiveTab(id)
+        setActiveService(text)
     };
 
   return (
     <motion.div 
     onClick={handleClick} 
-    className={`${activeTab==id?"bg-white":null} w-40 h-fit hover:bg-UIslate-200 cursor-pointer py-2 flexCenter rounded-md`}
+    className={`${activeService==text?"bg-white":null} w-40 h-fit hover:bg-UIslate-200 cursor-pointer py-2 flexCenter rounded-md`}
     whileHover={{ 
         scale: 1.03,
         transition: { 
@@ -33,7 +33,7 @@ function Servicebtn({text,id,setActiveTab,activeTab}:btn) {
         }
     }}
 >
-    <span className={`${activeTab==id?"text-UIslate-700":"text-UIslate-500"} text-sm whitespace-nowrap font-medium`}>
+    <span className={`${activeService==text?"text-UIslate-700":"text-UIslate-500"} text-sm whitespace-nowrap font-medium`}>
         {text}
     </span>
 </motion.div>
