@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { CloseIcon } from '../../../public/index'
 import Image from 'next/image'
 import useFilterSelection from '@/lib/states/selectedFilters'
@@ -9,6 +9,7 @@ interface tab {
 
 function TabFilter({name}:tab) {
   const {removeFilter} = useFilterSelection()
+
 
   const handleRemove = () =>{
     removeFilter(name)
