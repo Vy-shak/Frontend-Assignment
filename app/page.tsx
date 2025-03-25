@@ -1,7 +1,6 @@
-import { Mentorsbadge,SearchBar,MentorCard} from '../components/index'
+import { Mentorsbadge,SearchBar,MentorCard,FilterTabs} from '../components/index'
 import React from 'react'
 import { Dev,Rishi,Mistry,Jhony } from '../public/index';
-
 
 const mentors = [
   {
@@ -56,6 +55,7 @@ function page() {
       <Mentorsbadge />
       <section className='w-full  scroll-smooth flex px-18 flex-col justify-start items-center'>
         <SearchBar />
+        <FilterTabs/>
         <div className='w-full flexSide gap-y-4 flex-col'>
           {mentors.map((item)=>(
             <MentorCard key={item.id} description={item.description} verified={item.verified} reviews={item.reviews} rating={item.rating} role={item.role} Name={item.Name} profileImg={item.profileImg}/>

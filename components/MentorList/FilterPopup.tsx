@@ -1,6 +1,8 @@
+"use client"
 import React from 'react'
 import { motion, AnimatePresence } from "motion/react"
-import useFilterStore from '@/lib/states/useFilterpop'
+import { useRef } from 'react'
+import Filtermenu from './Filtermenu'
 
 interface menu {
     id: string,
@@ -12,6 +14,15 @@ interface popup {
 }
 
 function FilterPopup({ constant }: popup) {
+    const filterRef = useRef<HTMLInputElement>(null);
+
+    const handleCheck = () => {
+        if (filterRef.current) {
+          console.log("Checkbox value:", filterRef.current.name);
+        }
+      };
+
+
     return (
         <AnimatePresence>
         <motion.div 
@@ -27,10 +38,7 @@ function FilterPopup({ constant }: popup) {
             className='bg-white absolute mt-12 flexStart p-4 rounded-lg flex-col gap-y-2 outline-2 outline-UIslate-200'
         >
             {constant.map((item) => (
-                <div key={item.id} className='flex min-w-40 flexSide gap-x-2'>
-                    <input className='rounded-full w-4 h-4' type='checkbox' />
-                    <span>{item.text}</span>
-                </div>
+                <Filtermenu key={item.id} text={item.text} />
             ))}
         </motion.div>
     </AnimatePresence>

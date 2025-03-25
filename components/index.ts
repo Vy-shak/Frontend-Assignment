@@ -4,7 +4,8 @@ import Navbar from "./general/Navbar";
 import Mentorsbadge from "./MentorList/Mentorsbadge";
 import SearchBar from "./MentorList/SearchBar";
 import MentorCard from "./MentorList/MentorCard";
+import FilterTabs from "./MentorList/FilterTabs";
 
 
 
-export {Button,Sidebar,Navbar, MentorCard, Mentorsbadge,SearchBar}
+export {Button,Sidebar,Navbar, MentorCard, FilterTabs, Mentorsbadge,SearchBar}
