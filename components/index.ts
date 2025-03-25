@@ -8,7 +8,8 @@ import FilterTabs from "./MentorList/FilterTabs";
 import MentorsPcard from "./mentorsProfile/MentorsPcard";
 import Backcard from "./mentorsProfile/minor/Backcard";
 import Services from "./mentorsProfile/Services"
+import Review from "./mentorsProfile/sections/Review";
 
 
 
-export {Button,Sidebar,Navbar, Services, Backcard, MentorCard, MentorsPcard, FilterTabs, Mentorsbadge,SearchBar}
+export {Button,Sidebar,Navbar, Review, Services, Backcard, MentorCard, MentorsPcard, FilterTabs, Mentorsbadge,SearchBar}

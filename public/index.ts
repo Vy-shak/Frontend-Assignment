@@ -28,9 +28,13 @@ import Block from "./Icons/Block.svg"
 import Product from "./Icons/Purchase.svg"
 import WebinarIcon from "./Icons/WebinarIcon.svg"
 import Tumbnail2 from "./Images/Mentorprofile/Tumbnail.svg"
+import Profile1 from "./Images/Mentorprofile/review/Profile1.png"
+import Profile2 from "./Images/Mentorprofile/review/Profile2.png"
+import Profile3 from "./Images/Mentorprofile/review/Profile3.png"
+import Stars from "./Icons/Stars.svg"
 
 
 
 
 
-export {MentorIcon,BookingIcon, Product,WebinarIcon, Tumbnail2, RupeeIcon,MessageIcon,Block,BlueClock,VideoIcon, Arrowback, LinkdinIcon, Mediumicon,InstagramIcon,ShareIcon,Xicon, ClockIcon, SearchIcon, CloseIcon, TrendingIcon, Jhony,Dev,Rishi,Mistry, Bellicon, VerifyIcon, ProfileImg, CheveronDown,JobIcon,PriorityIcon}
+export {MentorIcon,BookingIcon, Stars, Profile1,Profile2,Profile3, Product,WebinarIcon, Tumbnail2, RupeeIcon,MessageIcon,Block,BlueClock,VideoIcon, Arrowback, LinkdinIcon, Mediumicon,InstagramIcon,ShareIcon,Xicon, ClockIcon, SearchIcon, CloseIcon, TrendingIcon, Jhony,Dev,Rishi,Mistry, Bellicon, VerifyIcon, ProfileImg, CheveronDown,JobIcon,PriorityIcon}
