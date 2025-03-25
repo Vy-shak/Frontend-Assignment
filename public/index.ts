@@ -13,9 +13,15 @@ import VerifyIcon from "./Icons/Verify.svg"
 import CloseIcon from "./Icons/Close.svg"
 import TrendingIcon from "./Icons/TrendingIcon.svg"
 import SearchIcon from "./Icons/Search.svg";
+import LinkdinIcon from "./Icons/LinkdinIcon.svg"
+import Xicon from "./Icons/XIcon.svg"
+import Mediumicon from "./Icons/MediumIcon.svg"
+import InstagramIcon from "./Icons/InstagramIcon.svg"
+import ShareIcon from "./Icons/ShareIcon.svg"
 import ClockIcon from "./Icons/Clock.svg"
 
 
 
 
-export {MentorIcon,BookingIcon, ClockIcon, SearchIcon, CloseIcon, TrendingIcon, Jhony,Dev,Rishi,Mistry, Bellicon, VerifyIcon, ProfileImg, CheveronDown,JobIcon,PriorityIcon}
+
+export {MentorIcon,BookingIcon, LinkdinIcon, Mediumicon,InstagramIcon,ShareIcon,Xicon, ClockIcon, SearchIcon, CloseIcon, TrendingIcon, Jhony,Dev,Rishi,Mistry, Bellicon, VerifyIcon, ProfileImg, CheveronDown,JobIcon,PriorityIcon}

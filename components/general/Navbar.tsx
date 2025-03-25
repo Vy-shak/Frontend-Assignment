@@ -9,7 +9,7 @@ function Navbar() {
       <div className='w-fit shadow h-fit p-2 rounded-lg bg-white outline-2 outline-UIslate-200'>
         <Image  alt='bellicon' src={Bellicon} />
       </div>
-      <ProfileTab name='Jimmy' profileImage={ProfileImg}/>
+      <ProfileTab name='yshak' profileImage={ProfileImg}/>
     </div>
   )
 }

@@ -1,8 +1,10 @@
+"use client"
 import React from 'react'
 import Image, { StaticImageData } from 'next/image'
 import { Button } from '../ui/button'
 import { VerifyIcon } from '../../public/index'
-
+import Link from 'next/link'
+import useMentorStore from '@/lib/states/useMentordata'
 
 interface mentorCard {
   profileImg: StaticImageData,
@@ -15,8 +17,21 @@ interface mentorCard {
 }
 
 function MentorCard({ profileImg, rating, reviews, Name, role, verified, description}: mentorCard) {
+  const {setMentor} = useMentorStore();
+
+  const handleClick = ()=>{
+    setMentor({  profileImg,
+      rating,
+      reviews,
+      Name,
+      role,
+      verified,
+      description})
+  }
+  
   return (
-    <div className='w-full cursor-pointer flex justify-between items-stretch bg-white outline-1 outline-UIslate-300 rounded-lg px-6 py-6'>
+    <Link href={"/mentorProfile"} className='w-full'>
+        <div onClick={handleClick} className='w-full cursor-pointer flex justify-between items-stretch bg-white outline-1 outline-UIslate-300 rounded-lg px-6 py-6'>
       <div className='flex gap-x-5 justify-between items-start w-full'>
          <Image alt='profileImg' className='h-full  rounded-lg object-contain ' src={profileImg} />
         <div className='flex justify-stretch items-center w-full h-full gap-y-3  flex-col'>
@@ -36,6 +51,7 @@ function MentorCard({ profileImg, rating, reviews, Name, role, verified, descrip
         </div>
       </div>
     </div>
+    </Link>
   )
 }
 
