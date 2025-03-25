@@ -11,8 +11,11 @@ import Rishi from "./Images/MentorList/Rishi.png"
 import Mistry from "./Images/MentorList/Mistry.png"
 import VerifyIcon from "./Icons/Verify.svg"
 import CloseIcon from "./Icons/Close.svg"
+import TrendingIcon from "./Icons/TrendingIcon.svg"
+import SearchIcon from "./Icons/Search.svg";
+import ClockIcon from "./Icons/Clock.svg"
 
 
 
 
-export {MentorIcon,BookingIcon, CloseIcon, Jhony,Dev,Rishi,Mistry, Bellicon, VerifyIcon, ProfileImg, CheveronDown,JobIcon,PriorityIcon}
+export {MentorIcon,BookingIcon, ClockIcon, SearchIcon, CloseIcon, TrendingIcon, Jhony,Dev,Rishi,Mistry, Bellicon, VerifyIcon, ProfileImg, CheveronDown,JobIcon,PriorityIcon}

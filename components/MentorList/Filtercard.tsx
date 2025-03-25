@@ -20,7 +20,7 @@ function Filtercard({type}:filtercard) {
   }
 
   return (
-    <div onClick={handleClick} className='bg-white cursor-pointer px-3 py-1.5 outline-1 rounded-sm flexCenter w-fit h-fit gap-x-2  outline-UIslate-300'>
+    <div onClick={handleClick} className='bg-white cursor-pointer px-6 py-1.5 outline-1 rounded-sm flexCenter w-fit h-fit gap-x-2  outline-UIslate-300'>
       <span className='text-xs text-UIslate-900 font-medium'>{type}</span>
       <Image className={`${filterType===type?"rotate-180":null}`} alt='cheveron' src={CheveronDown} />
     </div>

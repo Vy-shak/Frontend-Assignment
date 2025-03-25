@@ -1,8 +1,12 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import Filtercard from './Filtercard'
 import FilterPopup from './FilterPopup';
+import SearchPopup from './SearchPopup';
 import useFilterStore from '@/lib/states/useFilterpop';
+import Image from 'next/image';
+import { SearchIcon } from '../../public/index'
+import { useRef } from 'react';
 
 interface menu {
   id: number,
@@ -52,21 +56,36 @@ const filter = [
 ];
 
 function SearchBar() {
-  const {filterType} = useFilterStore();
-  console.log(filterType)
+  const { filterType } = useFilterStore();
+  const searchRef = useRef<HTMLInputElement>(null);
+  const [searchOn,setSearchon] = useState(false)
+  const [history,Sethistory] = useState<string[]>([]);
+
+  const handleHistory = ()=>{
+    if (searchRef.current?.value) {
+      const val = searchRef.current?.value;
+      Sethistory((prev)=>[...prev,val])
+    }
+    setSearchon(false);
+  }
+
   return (
     <section className='w-full flex py-5 justify-between items-center bg-white'>
-        <div className='w-fit h-fit'>
-        <input className='w-72 px-6 rounded py-1 placeholder:text-xs placeholder:font-medium placeholder:text-UIslate-400 outline-1 outline-UIslate-400 bg-UIslate-200' placeholder='Search by name'/>
+      <div className='flexStart w-full bg-white'>
+        <div className='w-fit flexCenter h-fit'>
+          <Image className='relative -right-6' alt='search icon' src={SearchIcon} />
+          <input onBlur={handleHistory}  onFocus={()=>setSearchon(true)} ref={searchRef}  className='w-72 px-6 rounded py-1 placeholder:text-xs placeholder:font-normal placeholder:text-UIslate-400 outline-1 outline-UIslate-400 bg-UIslate-200' placeholder='Search by name' />
         </div>
-        <div className='w-fit flexCenter gap-x-4 h-fit'>
-            {filter.map((item)=>(
-              <div key={item.id} className='flexStart gap-y-3 flex-col'>
-                <Filtercard  type={item.type} />
-                {filterType==item.type?<FilterPopup  constant={item.menus}/>:null}
-              </div>        
-            ))}
-        </div>
+        {searchOn&&<SearchPopup history={history} />}
+      </div>
+      <div className='w-fit flexCenter gap-x-4 h-fit'>
+        {filter.map((item) => (
+          <div key={item.id} className='flexStart gap-y-3 flex-col'>
+            <Filtercard type={item.type} />
+            {filterType == item.type ? <FilterPopup constant={item.menus} /> : null}
+          </div>
+        ))}
+      </div>
     </section>
   )
 }
