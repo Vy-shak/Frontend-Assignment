@@ -19,9 +19,10 @@ import Mediumicon from "./Icons/MediumIcon.svg"
 import InstagramIcon from "./Icons/InstagramIcon.svg"
 import ShareIcon from "./Icons/ShareIcon.svg"
 import ClockIcon from "./Icons/Clock.svg"
+import Arrowback from "./Icons/BackArrow.svg"
 
 
 
 
 
-export {MentorIcon,BookingIcon, LinkdinIcon, Mediumicon,InstagramIcon,ShareIcon,Xicon, ClockIcon, SearchIcon, CloseIcon, TrendingIcon, Jhony,Dev,Rishi,Mistry, Bellicon, VerifyIcon, ProfileImg, CheveronDown,JobIcon,PriorityIcon}
+export {MentorIcon,BookingIcon, Arrowback, LinkdinIcon, Mediumicon,InstagramIcon,ShareIcon,Xicon, ClockIcon, SearchIcon, CloseIcon, TrendingIcon, Jhony,Dev,Rishi,Mistry, Bellicon, VerifyIcon, ProfileImg, CheveronDown,JobIcon,PriorityIcon}
