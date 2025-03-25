@@ -20,9 +20,16 @@ import InstagramIcon from "./Icons/InstagramIcon.svg"
 import ShareIcon from "./Icons/ShareIcon.svg"
 import ClockIcon from "./Icons/Clock.svg"
 import Arrowback from "./Icons/BackArrow.svg"
+import RupeeIcon from "./Icons/Rupee.svg"
+import MessageIcon from "./Icons/Messages.svg"
+import VideoIcon from "./Icons/Video.svg"
+import BlueClock from "./Icons/Clockblue.svg"
+import Block from "./Icons/Block.svg"
+import Product from "./Icons/Purchase.svg"
+import WebinarIcon from "./Icons/WebinarIcon.svg"
 
 
 
 
 
-export {MentorIcon,BookingIcon, Arrowback, LinkdinIcon, Mediumicon,InstagramIcon,ShareIcon,Xicon, ClockIcon, SearchIcon, CloseIcon, TrendingIcon, Jhony,Dev,Rishi,Mistry, Bellicon, VerifyIcon, ProfileImg, CheveronDown,JobIcon,PriorityIcon}
+export {MentorIcon,BookingIcon, Product,WebinarIcon, RupeeIcon,MessageIcon,Block,BlueClock,VideoIcon, Arrowback, LinkdinIcon, Mediumicon,InstagramIcon,ShareIcon,Xicon, ClockIcon, SearchIcon, CloseIcon, TrendingIcon, Jhony,Dev,Rishi,Mistry, Bellicon, VerifyIcon, ProfileImg, CheveronDown,JobIcon,PriorityIcon}

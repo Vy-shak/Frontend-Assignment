@@ -17,7 +17,7 @@ function Servicebtn({text,id,setActiveTab,activeTab}:btn) {
   return (
     <motion.div 
     onClick={handleClick} 
-    className={`${activeTab==id?"bg-white":null} w-40 h-fit cursor-pointer py-2 flexCenter rounded-md`}
+    className={`${activeTab==id?"bg-white":null} w-40 h-fit hover:bg-UIslate-200 cursor-pointer py-2 flexCenter rounded-md`}
     whileHover={{ 
         scale: 1.03,
         transition: { 
