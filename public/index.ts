@@ -5,7 +5,13 @@ import PriorityIcon from "./Icons/PriorityDm.svg";
 import Bellicon from "./Icons/Bell.svg"
 import CheveronDown from "./Icons/Cheveron.svg"
 import ProfileImg from "./Images/Navbar/Profile.png"
+import Jhony from "./Images/MentorList/Jhony.png"
+import Dev from "./Images/MentorList/Dev.png"
+import Rishi from "./Images/MentorList/Rishi.png"
+import Mistry from "./Images/MentorList/Mistry.png"
+import VerifyIcon from "./Icons/Verify.svg"
 
 
 
-export {MentorIcon,BookingIcon, Bellicon, ProfileImg, CheveronDown,JobIcon,PriorityIcon}
+
+export {MentorIcon,BookingIcon, Jhony,Dev,Rishi,Mistry, Bellicon, VerifyIcon, ProfileImg, CheveronDown,JobIcon,PriorityIcon}

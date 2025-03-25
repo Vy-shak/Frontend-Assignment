@@ -210,6 +210,10 @@
   align-items: center;
   justify-content: start;
 }
+* {
+  box-sizing: border-box;
+  @apply border-border outline-ring/50;
+}
 
 
 @layer base {
