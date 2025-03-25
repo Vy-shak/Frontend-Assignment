@@ -11,7 +11,12 @@ function Filtercard({type}:filtercard) {
   const  {setFilter,filterType} = useFilterStore()
 
   const handleClick = ()=>{
-      setFilter(type)
+      if (filterType!==type) {
+        setFilter(type);
+      }
+      else{
+        setFilter("");
+      }
   }
 
   return (

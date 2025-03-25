@@ -10,8 +10,9 @@ import Dev from "./Images/MentorList/Dev.png"
 import Rishi from "./Images/MentorList/Rishi.png"
 import Mistry from "./Images/MentorList/Mistry.png"
 import VerifyIcon from "./Icons/Verify.svg"
+import CloseIcon from "./Icons/Close.svg"
 
 
 
 
-export {MentorIcon,BookingIcon, Jhony,Dev,Rishi,Mistry, Bellicon, VerifyIcon, ProfileImg, CheveronDown,JobIcon,PriorityIcon}
+export {MentorIcon,BookingIcon, CloseIcon, Jhony,Dev,Rishi,Mistry, Bellicon, VerifyIcon, ProfileImg, CheveronDown,JobIcon,PriorityIcon}

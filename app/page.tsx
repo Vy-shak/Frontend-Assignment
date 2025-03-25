@@ -53,7 +53,7 @@ function page() {
   return (
     <section className='w-full flex flex-col justify-start items-center pt-16 h-full'>
       <Mentorsbadge />
-      <section className='w-full  scroll-smooth flex px-18 flex-col justify-start items-center'>
+      <section className='w-full gap-y-10  scroll-smooth flex px-18 flex-col justify-start items-center'>
         <SearchBar />
         <FilterTabs/>
         <div className='w-full flexSide gap-y-4 flex-col'>
