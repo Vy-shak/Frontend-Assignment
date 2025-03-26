@@ -11,7 +11,8 @@ import Services from "./mentorsProfile/Services"
 import Review from "./mentorsProfile/sections/Review";
 import Guidance from "./callmentor/sections/Guidance";
 import MentorName from "./callmentor/minor/MentorName";
+import Calender from "./callmentor/Calender";
 
 
 
-export {Button,Sidebar,Navbar, MentorName, Guidance, Review, Services, Backcard, MentorCard, MentorsPcard, FilterTabs, Mentorsbadge,SearchBar}
+export {Button,Sidebar,Navbar, Calender, MentorName, Guidance, Review, Services, Backcard, MentorCard, MentorsPcard, FilterTabs, Mentorsbadge,SearchBar}
