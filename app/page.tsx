@@ -1,7 +1,6 @@
 import { Mentorsbadge,SearchBar,MentorCard,FilterTabs} from '../components/index'
 import React from 'react'
 import { Dev,Rishi,Mistry,Jhony } from '../public/index';
-import Link from 'next/link';
 
 const mentors = [
   {
