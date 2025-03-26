@@ -2,6 +2,8 @@ import React from 'react'
 
 import { Editor, EditorContent, EditorContentProps, useEditor } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
+import Image from 'next/image'
+import { Boldicon, ItalicIcon, Underlineicon, StrikeIcon } from '../../public/index'
 
 
 const Menubar = ({ editor }: EditorContentProps) => {
@@ -23,15 +25,9 @@ const Menubar = ({ editor }: EditorContentProps) => {
                 <button onClick={() => editor.chain().focus().setParagraph().run()} className={editor.isActive('paragraph') ? 'is-active' : ''}>
                     Paragraph
                 </button>
-                <button onClick={() => editor.chain().focus().toggleBold().run()} className={editor.isActive('bold') ? 'is-active' : ''}>
-                    Bold
-                </button>
-                <button onClick={() => editor.chain().focus().toggleItalic().run()} className={editor.isActive('italic') ? 'is-active' : ''}>
-                    Italic
-                </button>
-                <button onClick={() => editor.chain().focus().toggleStrike().run()} className={editor.isActive('strike') ? 'is-active' : ''}>
-                    Strike
-                </button>
+                <Image alt='bold icon' src={Boldicon} onClick={() => editor.chain().focus().toggleBold().run()} className={editor.isActive('bold') ? 'is-active' : ''} />
+                <Image onClick={() => editor.chain().focus().toggleItalic().run()} className={editor.isActive('italic') ? 'is-active' : ''} alt='italic icon'  src={ItalicIcon}/>    
+                <Image alt='strikeicon'  src={StrikeIcon} onClick={() => editor.chain().focus().toggleStrike().run()} className={editor.isActive('strike') ? 'is-active' : ''}/>    
                 <button onClick={() => editor.chain().focus().toggleHighlight().run()} className={editor.isActive('highlight') ? 'is-active' : ''}>
                     Highlight
                 </button>

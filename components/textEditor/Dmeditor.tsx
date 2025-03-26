@@ -15,10 +15,10 @@ const DmEditor = () => {
         }
     })
 
-    return (<>
+    return (<div className='w-full flex justify-center items-start flex-col'>
     <Menubar editor={editor} />
 <EditorContent editor={editor} />
-    </>)
+    </div>)
 }
 
 export default DmEditor
