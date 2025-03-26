@@ -1,6 +1,7 @@
 import React from 'react'
-import { Guidance, Backcard, MentorName, Calender } from '../../components/index'
+import { Guidance, Backcard, MentorName, Slot } from '../../components/index'
 import { guidanceData } from '../utils/dummyData/calldata'
+
 
 function page() {
     return (
@@ -12,8 +13,8 @@ function page() {
                     <Guidance id={guidanceData.id} details={guidanceData.details} bulletpoints={guidanceData.bulletpoints} serviceType={guidanceData.serviceType} subHeading={guidanceData.subHeading} />
                 </div>
             </div>
-            <div className='w-full flexStart'>
-                    <Calender />
+            <div className='w-full px-18 flexStart'>
+                    <Slot />
             </div>
         </section>
     )
