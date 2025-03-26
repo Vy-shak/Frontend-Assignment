@@ -9,7 +9,8 @@ import MentorsPcard from "./mentorsProfile/MentorsPcard";
 import Backcard from "./mentorsProfile/minor/Backcard";
 import Services from "./mentorsProfile/Services"
 import Review from "./mentorsProfile/sections/Review";
+import Guidance from "./callmentor/sections/Guidance";
 
 
 
-export {Button,Sidebar,Navbar, Review, Services, Backcard, MentorCard, MentorsPcard, FilterTabs, Mentorsbadge,SearchBar}
+export {Button,Sidebar,Navbar, Guidance, Review, Services, Backcard, MentorCard, MentorsPcard, FilterTabs, Mentorsbadge,SearchBar}

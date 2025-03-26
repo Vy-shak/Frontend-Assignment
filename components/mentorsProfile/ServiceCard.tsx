@@ -22,7 +22,7 @@ function ServiceCard({ serviceHead, profileImg, description, details }: Servicec
                     <p className='text-sm text-UIslate-700 font-semibold'>{description}</p>
                 </div>
             </div>
-            <div className='flexSide gap-x-3'>
+            <div className='flexSide w-full gap-x-3'>
                 {details.map((item) => (
                     <Serviceblock key={item.id} text={item.text} icon={item.icon} type={item.type} />
                 ))}
