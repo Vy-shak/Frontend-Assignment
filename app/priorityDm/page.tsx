@@ -1,7 +1,7 @@
 import React from 'react'
 import { Backcard, Guidance, MentorName } from '../../components/index'
 import { guidanceData } from '../utils/dummyData/calldata'
-import Dmeditor from '@/components/textEditor/Dmeditor'
+import DmEditor from '@/components/textEditor/Dmeditor'
 
 function page() {
     return (
@@ -16,7 +16,7 @@ function page() {
             <div className='w-full flexStart flex-col'>
                     <span className='text-xl whitespace-nowrap font-medium text-UIslate-900'>Your question</span>
                     <div className='w-full flexStart'>
-                        <Dmeditor />
+                        <DmEditor />
                     </div>
                 </div>
         </section>
