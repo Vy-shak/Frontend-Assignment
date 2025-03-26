@@ -1,3 +1,8 @@
+interface DropDown {
+    id: number;
+    label: string;
+  }
+
 const timeSlots = [
     { id: 1, time: "6:00 – 6:30AM" },
     { id: 2, time: "7:00 – 7:30AM" },
@@ -19,5 +24,13 @@ const timeSlots = [
     { id: 18, time: "11:00 – 11:30PM" },
   ]
 
+  const timezones: DropDown[] = [
+    { id: 1, label: "(GMT -8:00) Pacific Time (US & Canada)" },
+    { id: 2, label: "(GMT -5:00) Eastern Time (US & Canada)" },
+    { id: 3, label: "(GMT 0:00) Greenwich Mean Time" },
+    { id: 4, label: "(GMT +5:30) Chennai, Kolkata, Mumbai, New Delhi (IST)" },
+    { id: 5, label: "(GMT +9:00) Tokyo, Seoul" },
+  ];
 
-export {timeSlots}
+
+export {timeSlots,timezones}
