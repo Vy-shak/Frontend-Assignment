@@ -4,12 +4,14 @@ import { Button } from '../ui/button'
 import Serviceblock from './minor/Servicebloc'
 import Image from 'next/image'
 import { serviceTypes,Servicecardtype } from '@/app/@types/state/Service'
+import Link from 'next/link'
 
 
 
 function ServiceCard({ serviceHead, profileImg, description, details }: Servicecardtype) {
     return (
-        <div className='bg-white h-fit  flexStart gap-y-6 flex-col  outline-1 p-6 outline-UIslate-300 rounded-lg'>
+        <Link href={"/callmentor"} className='w-full flexStart'>
+                <div className='bg-white cursor-pointer h-fit  flexStart gap-y-6 flex-col  outline-1 p-6 outline-UIslate-300 rounded-lg'>
             <div className='w-full flex-col flexStart gap-y-8'>
                 {profileImg&&<Image className='w-full' alt='profileimg' src={profileImg}/>}
                 <div className='w-full flex justify-between items-center'>
@@ -28,6 +30,7 @@ function ServiceCard({ serviceHead, profileImg, description, details }: Servicec
                 ))}
             </div>
         </div>
+        </Link>
     )
 }
 
