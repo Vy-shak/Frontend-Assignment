@@ -13,7 +13,8 @@ import Guidance from "./callmentor/sections/Guidance";
 import MentorName from "./callmentor/minor/MentorName";
 import Calender from "./callmentor/Calender";
 import Slot from "./callmentor/sections/Slot";
+import Timezone from "./Timezone";
 
 
 
-export {Button,Sidebar,Navbar, Calender, Slot, MentorName, Guidance, Review, Services, Backcard, MentorCard, MentorsPcard, FilterTabs, Mentorsbadge,SearchBar}
+export {Button,Sidebar,Navbar, Timezone, Calender, Slot, MentorName, Guidance, Review, Services, Backcard, MentorCard, MentorsPcard, FilterTabs, Mentorsbadge,SearchBar}

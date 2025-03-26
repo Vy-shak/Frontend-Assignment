@@ -28,8 +28,6 @@ const timeSlots = [
     { id: 1, label: "(GMT -8:00) Pacific Time (US & Canada)" },
     { id: 2, label: "(GMT -5:00) Eastern Time (US & Canada)" },
     { id: 3, label: "(GMT 0:00) Greenwich Mean Time" },
-    { id: 4, label: "(GMT +5:30) Chennai, Kolkata, Mumbai, New Delhi (IST)" },
-    { id: 5, label: "(GMT +9:00) Tokyo, Seoul" },
   ];
 
 
