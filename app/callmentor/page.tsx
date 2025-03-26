@@ -1,11 +1,12 @@
 import React from 'react'
 import { Guidance, Backcard, MentorName, Slot,Timezone } from '../../components/index'
 import { guidanceData } from '../utils/dummyData/calldata'
+import { Button } from '../../components/index'
 
 
 function page() {
     return (
-        <section className='w-full flex pb-16 flex-col pl-52 justify-start items-center pt-16 h-full'>
+        <section className='w-full  flex pb-16 flex-col pl-52 justify-start items-center pt-16 h-full'>
             <div className='w-full flex justify-start border-b-2 border-UIslate-500 py-6 pr-18 items-start'>
                 <Backcard />
                 <div className='w-full flexStart gap-y-4 flex-col'>
@@ -13,11 +14,11 @@ function page() {
                     <Guidance id={guidanceData.id} details={guidanceData.details} bulletpoints={guidanceData.bulletpoints} serviceType={guidanceData.serviceType} subHeading={guidanceData.subHeading} />
                 </div>
             </div>
-            <div className='w-full px-18 flexStart'>
+            <div className='w-full flex-col gap-y-4 px-18 pb-6 flexStart'>
                     <Slot />
             </div>
-            <div className='w-full px-18 flexStart'>
-                <Timezone />
+            <div className='w-full flex px-18 justify-end items-center'>
+                <Button>Confirm details</Button>
             </div>
         </section>
     )

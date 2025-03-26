@@ -10,12 +10,12 @@ function Timezone() {
     const [selectedZone,setselectedZone] = useState<string>("(GMT + 5:30) Chennai, Kolkata, Mumbai, New Delhi(IST)")
     const [isOpen,setIsOpen] = useState(false);
     return (
-        <section className='w-full flex-col flexStart'>
+        <section className='w-full flex-col  flexStart'>
             <div onClick={()=>setIsOpen((prev)=>!prev)} className='w-full flex h-12 justify-between items-center rounded-lg px-3 bg-white border-2 border-UIslate-300'>
                 <span>{selectedZone}</span>
                 <Image alt='cheveron down' src={CheveronDown} />
             </div>
-            {<TimeDropdown setOpen={setIsOpen} setterfn={setselectedZone} />}
+            {<TimeDropdown isOpen ={isOpen} setOpen={setIsOpen} setterfn={setselectedZone} />}
         </section>
     )
 }
