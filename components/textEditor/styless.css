@@ -19,7 +19,7 @@
         display: inline-block;
         width: 6.25rem;
         height: auto;
-        border-radius: 0.5rem; /* Adjust for more/less rounding */
+        border-radius: 0.5rem;
     
         &.ProseMirror-selectednode {
             outline: 3px solid var(--purple);

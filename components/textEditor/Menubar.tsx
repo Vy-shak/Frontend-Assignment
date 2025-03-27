@@ -6,13 +6,12 @@ import { useRef } from 'react'
 import { Editor, EditorContent, EditorContentProps, } from '@tiptap/react'
 import Image from 'next/image'
 import { Boldicon, BulletIcon, NumberListicon, Link, Uploadimg, UploadVideo, ItalicIcon, Underlineicon, StrikeIcon } from '../../public/index'
-import { useCallback } from 'react'
-import { img } from 'motion/react-client'
 
 
 const Menubar = ({ editor }: EditorContentProps) => {
     const ImageRef = useRef<HTMLInputElement>(null);
     const [imgUrl,setimgUrl] = useState<string>("")
+    const [Heading,setHeading] = useState<string>("")
 
 
     useEffect(() => {

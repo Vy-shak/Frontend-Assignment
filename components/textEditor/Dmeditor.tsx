@@ -11,7 +11,7 @@ import "./styless.css"
 const DmEditor = () => {
     const editor = useEditor({
         extensions: [StarterKit,BulletList,ListItem,Image],
-        content: '<p>Hello World! 🌎️</p>',
+        content: '<p>The editor is fully working check it out</p>',
         editorProps: {
             attributes: {
                 class: "bg-UIslate-50 outline-2 outline-black w-2xl h-72 p-4 rounded-b-xl border-t-0 border border-transparent"
