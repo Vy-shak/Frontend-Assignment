@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 function MentorName() {
     const {mentor} = useMentorStore()
-    console.log(mentor)
+    
   return (
     <div className='flexSide gap-x-2 w-full'>
       <span  className='text-xl text-UIslate-700 font-medium'>{mentor?.Name}</span>

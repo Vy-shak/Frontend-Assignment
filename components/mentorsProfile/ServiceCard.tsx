@@ -7,10 +7,17 @@ import { serviceTypes,Servicecardtype } from '@/app/@types/state/Service'
 import Link from 'next/link'
 
 
+const path = {
+    "1:1 Call":"/callmentor",
+    "Priority DM":"/priorityDm"
+}
 
-function ServiceCard({ serviceHead, profileImg, description, details }: Servicecardtype) {
+
+
+function ServiceCard({ serviceHead, profileImg, description, type, details }: Servicecardtype) {
     return (
-        <Link href={"/callmentor"} className='w-full flexStart'>
+        //@ts-ignore
+        <Link href={`${path[type]}`} className='w-full flexStart'>
                 <div className='bg-white cursor-pointer h-fit  flexStart gap-y-6 flex-col  outline-1 p-6 outline-UIslate-300 rounded-lg'>
             <div className='w-full flex-col flexStart gap-y-8'>
                 {profileImg&&<Image className='w-full' alt='profileimg' src={profileImg}/>}

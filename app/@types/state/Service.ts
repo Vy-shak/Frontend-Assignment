@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 
 export enum serviceTypes {
-    all= "all",
+    all= "All",
     call = "1:1 Call",
     dm = "Priority DM",
     package = "Package",
