@@ -7,6 +7,7 @@ import { useRef } from 'react'
 import { Editor, EditorContent, EditorContentProps, } from '@tiptap/react'
 import Image, { StaticImageData } from 'next/image'
 import { Boldicon, BulletIcon, NumberListicon, Link, ImojiIcon, Uploadimg, UploadVideo, ItalicIcon, Underlineicon, Quoteicon, StrikeIcon } from '../../public/index'
+import { addLink } from './utils/addLink'
 
 type Level = 1 | 2 | 3 | 4 | 5 | 6
 
@@ -30,15 +31,13 @@ const toolbarItems: toolbar[] = [
     { id: 5, icon: Quoteicon, command: (editor) => editor.chain().focus().toggleBlockquote().run(), type: 'blockquote' },
     { id: 6, icon: BulletIcon, command: (editor) => editor.chain().focus().toggleBulletList().run(), type: 'bulletList' },
     { id: 7, icon: NumberListicon, command: (editor) => editor.chain().focus().toggleOrderedList().run(), type: 'orderedList' },
-    { id: 8, icon: Link, command: () => {}, type: 'link' }, // Added Link Icon
-    { id: 9, icon: UploadVideo, command: () => {}, type: 'video' }, // Added Video Icon
-    { id: 10, icon: ImojiIcon, command: () => {}, type: 'emoji' } // Moved Emoji Icon to the end
+    { id: 8, icon: Link, command: addLink, type: 'link' }, // Added Link Icon
+    { id: 9, icon: UploadVideo, command: () => {}, type: 'video' },
 ];
 
 
 
 const Menubar = ({ editor }: EditorContentProps) => {
-    const [width, setWidth] = useState(window.innerWidth);
     const ImageRef = useRef<HTMLInputElement>(null);
     const [imgUrl, setimgUrl] = useState<string>("")
     const [Heading, setHeading] = useState<headingLevel>({ heading: "Heading 1", level: 1 })
@@ -80,6 +79,7 @@ const Menubar = ({ editor }: EditorContentProps) => {
                     <Image alt='fileUpload' src={Uploadimg} />
                     <input onChange={() => selectImg(ImageRef, setimgUrl)} ref={ImageRef} className='hidden' type='file' />
                 </div>
+                
             </div>
         </>
     )

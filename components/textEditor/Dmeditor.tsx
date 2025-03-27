@@ -6,12 +6,18 @@ import Menubar from './Menubar'
 import BulletList from '@tiptap/extension-bullet-list'
 import ListItem from '@tiptap/extension-list-item'
 import Image from '@tiptap/extension-image'
+import Link from '@tiptap/extension-link'
+import Blockquote from '@tiptap/extension-blockquote';
 import "./styless.css"
 import Underline from '@tiptap/extension-underline'
 
 const DmEditor = () => {
     const editor = useEditor({
-        extensions: [StarterKit,BulletList,ListItem,Image,Underline],
+        extensions: [StarterKit,BulletList,Blockquote,ListItem,Image,Underline,Link.configure({
+            openOnClick: true,
+            autolink: true,
+            linkOnPaste: true,
+          }),],
         content: '<p>The editor is fully working check it out</p>',
         editorProps: {
             attributes: {
@@ -20,7 +26,7 @@ const DmEditor = () => {
         }
     })
 
-    return (<div className='w-full px-18 max-w-full flex justify-center items-start flex-col'>
+    return (<div className='w-full max-w-full flex justify-center items-start flex-col'>
         <Menubar editor={editor} />
         <EditorContent 
             editor={editor} 
