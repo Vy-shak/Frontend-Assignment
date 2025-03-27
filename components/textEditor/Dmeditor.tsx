@@ -7,10 +7,11 @@ import BulletList from '@tiptap/extension-bullet-list'
 import ListItem from '@tiptap/extension-list-item'
 import Image from '@tiptap/extension-image'
 import "./styless.css"
+import Underline from '@tiptap/extension-underline'
 
 const DmEditor = () => {
     const editor = useEditor({
-        extensions: [StarterKit,BulletList,ListItem,Image],
+        extensions: [StarterKit,BulletList,ListItem,Image,Underline],
         content: '<p>The editor is fully working check it out</p>',
         editorProps: {
             attributes: {

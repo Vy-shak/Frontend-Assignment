@@ -44,10 +44,11 @@ import NumberListicon from "./Editor/NumerList.svg"
 import Uploadimg from "./Editor/UploadImgIcon.svg"
 import UploadVideo from "./Editor/UploadVideoicon.svg"
 import ImojiIcon from "./Editor/ImojiIcon.svg"
+import Quoteicon from "./Editor/QuoteIcon.svg"
 
 
 
 
 
 
-export {MentorIcon,BookingIcon, NumberListicon, Uploadimg, BulletIcon,Link,UploadVideo,ImojiIcon, Boldicon,ItalicIcon,StrikeIcon,Underlineicon, Stars, CalenderIcon, CheveronRight, Profile1,Profile2,Profile3, Product,WebinarIcon, Tumbnail2, RupeeIcon,MessageIcon,Block,BlueClock,VideoIcon, Arrowback, LinkdinIcon, Mediumicon,InstagramIcon,ShareIcon,Xicon, ClockIcon, SearchIcon, CloseIcon, TrendingIcon, Jhony,Dev,Rishi,Mistry, Bellicon, VerifyIcon, ProfileImg, CheveronDown,JobIcon,PriorityIcon}
+export {MentorIcon,BookingIcon, NumberListicon, Quoteicon, Uploadimg, BulletIcon,Link,UploadVideo,ImojiIcon, Boldicon,ItalicIcon,StrikeIcon,Underlineicon, Stars, CalenderIcon, CheveronRight, Profile1,Profile2,Profile3, Product,WebinarIcon, Tumbnail2, RupeeIcon,MessageIcon,Block,BlueClock,VideoIcon, Arrowback, LinkdinIcon, Mediumicon,InstagramIcon,ShareIcon,Xicon, ClockIcon, SearchIcon, CloseIcon, TrendingIcon, Jhony,Dev,Rishi,Mistry, Bellicon, VerifyIcon, ProfileImg, CheveronDown,JobIcon,PriorityIcon}

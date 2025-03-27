@@ -4,6 +4,7 @@ import { Dispatch, SetStateAction } from 'react'
 import Image from 'next/image'
 import { Heading } from '@/app/@types/state/editor'
 import { headingLevel } from '../Menubar'
+import {motion} from "motion/react"
 
 type Level = 1 | 2 | 3 | 4 | 5 | 6
 
@@ -30,13 +31,19 @@ function HeadingComp({ heading, setHeading }: headingdata) {
         <div className='flex flex-col gap-y-2 justify-start items-center'>
             <div onClick={()=>setIsOpen((prev)=>!prev)} className='w-full cursor-pointer gap-x-6 flex justify-between items-center bg-white'>
                 <span>{heading.heading}</span>
-                <Image alt='cheveron down' src={CheveronDown} />
+                <Image className={`${isOpen?"rotate-180":null}`} alt='cheveron down' src={CheveronDown} />
             </div>
-            {isOpen&&<div className='flex z-50 px-3 mt-10 gap-y-1 py-4 border-2 border-neutral-400 rounded-md items-start  absolute flex-col justify-start bg-white '>
+            {isOpen&&<motion.div initial={{ opacity: 0, y: -20, scale: 0.95 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: -20, scale: 0.95 }}
+          transition={{
+              duration: 0.3,
+              type: "spring",
+          }} className='flex z-50 px-3 mt-10 gap-y-1 py-4 border-2 border-neutral-400 rounded-md items-start  absolute flex-col justify-start bg-white '>
                 {HeadingLevel.map((item)=>(
-                    <span className='w-full hover:bg-UIblue-50 px-4 py-2 rounded' onClick={()=>handleClick(item)} key={item.id}>{item.heading}</span>
+                    <span  className='w-full cursor-pointer hover:bg-UIblue-50 px-4 py-2 rounded' onClick={()=>handleClick(item)} key={item.id}>{item.heading}</span>
                 ))}
-            </div>}
+            </motion.div>}
         </div>
     )
 }
