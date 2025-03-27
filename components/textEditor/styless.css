@@ -1,9 +1,8 @@
-
+/* Basic editor styles */
 .tiptap {
     :first-child {
         margin-top: 0;
     }
-
 
     ul,
     ol {
@@ -20,11 +19,47 @@
         width: 6.25rem;
         height: auto;
         border-radius: 0.5rem;
-    
+
         &.ProseMirror-selectednode {
             outline: 3px solid var(--purple);
             border-radius: 0.5rem; 
         }
+    }
+
+    /* Heading styles */
+    h1, 
+    h2, 
+    h3, 
+    h4, 
+    h5, 
+    h6 {
+        line-height: 1.1;
+        margin-top: 2.5rem;
+        text-wrap: pretty;
+    }
+
+    h1, 
+    h2 {
+        margin-top: 3.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    h1 { 
+        font-size: 1.4rem; 
+    }
+
+    h2 { 
+        font-size: 1.2rem; 
+    }
+
+    h3 { 
+        font-size: 1.1rem; 
+    }
+
+    h4, 
+    h5, 
+    h6 { 
+        font-size: 1rem; 
     }
 }
 
@@ -43,15 +78,15 @@
     padding-left: 1.5rem; 
     margin-left: 1rem;
 }
+
+.tiptap ol li {
+    margin-bottom: 0.5rem; 
+}
+
 .image-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; 
     gap: 1rem; 
-}
-
-
-.tiptap ol li {
-    margin-bottom: 0.5rem; 
 }
 
