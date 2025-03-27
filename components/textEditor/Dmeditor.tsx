@@ -3,14 +3,18 @@
 import { useEditor, EditorContent } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 import Menubar from './Menubar'
+import BulletList from '@tiptap/extension-bullet-list'
+import ListItem from '@tiptap/extension-list-item'
+import Image from '@tiptap/extension-image'
+import "./styless.css"
 
 const DmEditor = () => {
     const editor = useEditor({
-        extensions: [StarterKit],
+        extensions: [StarterKit,BulletList,ListItem,Image],
         content: '<p>Hello World! 🌎️</p>',
         editorProps: {
             attributes: {
-                class: "bg-UIslate-50 border-2 border-UIslate-300 rounded-xl w-2xl h-72 p-4"
+                class: "bg-UIslate-50 outline-2 outline-black w-2xl h-72 p-4 rounded-b-xl border-t-0 border border-transparent"
             }
         }
     })
