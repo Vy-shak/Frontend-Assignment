@@ -1,24 +1,31 @@
-import React from 'react'
-
-import { Editor, EditorContent, EditorContentProps, useEditor } from '@tiptap/react'
-import StarterKit from '@tiptap/starter-kit'
+"use client"
+import React, { useEffect } from 'react'
+import { useState } from 'react'
+import { selectImg,uploadFromdevice } from './utils/selectImg'
+import { useRef } from 'react'
+import { Editor, EditorContent, EditorContentProps, } from '@tiptap/react'
 import Image from 'next/image'
 import { Boldicon, BulletIcon, NumberListicon, Link, Uploadimg, UploadVideo, ItalicIcon, Underlineicon, StrikeIcon } from '../../public/index'
 import { useCallback } from 'react'
+import { img } from 'motion/react-client'
 
 
 const Menubar = ({ editor }: EditorContentProps) => {
+    const ImageRef = useRef<HTMLInputElement>(null);
+    const [imgUrl,setimgUrl] = useState<string>("")
+
+
+    useEffect(() => {
+        if (!editor || !imgUrl) return;
+        
+        editor.chain().focus().insertContent(<div className='flex'><img src="${imgUrl}" /></div>).setImage({ src: imgUrl }).run();
+    }, [editor, imgUrl]);
+
+
     if (!editor) {
-        return null
+        return null;
     }
 
-    const addImage = useCallback(() => {
-        const url = window.prompt('URL')
-
-        if (url) {
-            editor.chain().focus().setImage({ src: url }).run()
-        }
-    }, [editor])
 
     return (
         <>
@@ -28,7 +35,10 @@ const Menubar = ({ editor }: EditorContentProps) => {
                 <Image alt='strikeicon' src={StrikeIcon} onClick={() => editor.chain().focus().toggleStrike().run()} />
                 <Image alt='bulletlist' src={BulletIcon} onClick={() => editor.chain().focus().toggleBulletList().run()} />
                 <Image alt='OrderedList' src={NumberListicon} onClick={() => editor.chain().focus().toggleOrderedList().run()} />
-                <Image alt='OrderedList' src={Uploadimg} onClick={addImage} />
+                <div onClick={()=>uploadFromdevice(ImageRef)} className='w-fit h-fit'>
+                    <Image alt='OrderedList' src={Uploadimg}  />
+                    <input onChange={()=>selectImg(ImageRef,setimgUrl)} ref={ImageRef} className='hidden' type='file' />
+                </div>
             </div>
         </>
     )
