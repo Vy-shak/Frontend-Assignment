@@ -31,8 +31,9 @@ const toolbarItems: toolbar[] = [
     { id: 5, icon: Quoteicon, command: (editor) => editor.chain().focus().toggleBlockquote().run(), type: 'blockquote' },
     { id: 6, icon: BulletIcon, command: (editor) => editor.chain().focus().toggleBulletList().run(), type: 'bulletList' },
     { id: 7, icon: NumberListicon, command: (editor) => editor.chain().focus().toggleOrderedList().run(), type: 'orderedList' },
-    { id: 8, icon: Link, command: addLink, type: 'link' }, // Added Link Icon
+    { id: 8, icon: Link, command: addLink, type: 'link' }, 
     { id: 9, icon: UploadVideo, command: () => {}, type: 'video' },
+    { id: 10, icon: ImojiIcon, command: () => {}, type: 'imoji' },
 ];
 
 
@@ -79,7 +80,7 @@ const Menubar = ({ editor }: EditorContentProps) => {
                     <Image alt='fileUpload' src={Uploadimg} />
                     <input onChange={() => selectImg(ImageRef, setimgUrl)} ref={ImageRef} className='hidden' type='file' />
                 </div>
-                
+
             </div>
         </>
     )
