@@ -1,9 +1,9 @@
-import { StaticImageData } from 'next/image'
+
 import React from 'react'
 import { Button } from '../ui/button'
 import Serviceblock from './minor/Servicebloc'
 import Image from 'next/image'
-import { serviceTypes,Servicecardtype } from '@/app/@types/state/Service'
+import { Servicecardtype } from '@/app/@types/state/Service'
 import Link from 'next/link'
 
 

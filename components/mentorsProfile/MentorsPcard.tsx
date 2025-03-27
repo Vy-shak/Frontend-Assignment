@@ -1,14 +1,18 @@
 "use client"
-import React from 'react'
+import React, { useEffect } from 'react'
 import SessionNo from './minor/SessionNo'
 import SocialHandle from './minor/SocialHandle'
 import Image from 'next/image'
 import { VerifyIcon } from '../../public/index'
 import useMentorStore from '@/lib/states/useMentordata'
+import useDataMissing from '@/app/hooks/DataMissing'
 
 
 function MentorsPcard() {
     const { mentor } = useMentorStore();
+    useDataMissing(mentor)
+
+    
     return (
         <div className='w-full cursor-pointer flex justify-between items-stretch bg-white py-6'>
             <div className='flex gap-x-5 justify-between items-start w-full'>
