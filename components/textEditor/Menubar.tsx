@@ -7,8 +7,6 @@ import { useRef } from 'react'
 import { Editor, EditorContent, EditorContentProps, } from '@tiptap/react'
 import Image, { StaticImageData } from 'next/image'
 import { Boldicon, BulletIcon, NumberListicon, Link, ImojiIcon, Uploadimg, UploadVideo, ItalicIcon, Underlineicon, Quoteicon, StrikeIcon } from '../../public/index'
-import { QuoteIcon, VideoIcon } from 'lucide-react'
-import { div } from 'motion/react-client'
 
 type Level = 1 | 2 | 3 | 4 | 5 | 6
 
@@ -40,6 +38,7 @@ const toolbarItems: toolbar[] = [
 
 
 const Menubar = ({ editor }: EditorContentProps) => {
+    const [width, setWidth] = useState(window.innerWidth);
     const ImageRef = useRef<HTMLInputElement>(null);
     const [imgUrl, setimgUrl] = useState<string>("")
     const [Heading, setHeading] = useState<headingLevel>({ heading: "Heading 1", level: 1 })
@@ -66,7 +65,7 @@ const Menubar = ({ editor }: EditorContentProps) => {
 
     return (
         <>
-            <div className=" bg-white border-2 rounded-t-md border-b-0 outline-none border-UIslate-900  flexSide px-4 py-3 gap-x-3">
+            <div className={`w-full bg-white  border-2 rounded-t-md border-b-0 outline-none border-UIslate-900  flexSide px-4 py-3 gap-x-3`}>
                 <HeadingComp setHeading={setHeading} heading={Heading} />
                 {toolbarItems.map(({ icon, command, type ,id}) => (
                     <div key={id} className={` px-4 cursor-pointer  rounded py-1 ${editor.isActive(type) ? 'bg-UIblue-50 ' : 'bg-none'}`}>

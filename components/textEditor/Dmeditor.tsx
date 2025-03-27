@@ -15,14 +15,17 @@ const DmEditor = () => {
         content: '<p>The editor is fully working check it out</p>',
         editorProps: {
             attributes: {
-                class: "bg-UIslate-50 outline-2 outline-black w-2xl h-72 p-4 rounded-b-xl border-t-0 border border-transparent"
+                class: "bg-UIslate-50  border-black w-full h-72 p-4 rounded-b-xl border-t-1 border-2"
             }
         }
     })
 
-    return (<div className='w-full flex justify-center items-start flex-col'>
-    <Menubar editor={editor} />
-<EditorContent editor={editor} />
+    return (<div className='w-full px-18 max-w-full flex justify-center items-start flex-col'>
+        <Menubar editor={editor} />
+        <EditorContent 
+            editor={editor} 
+            className='w-full' 
+        />
     </div>)
 }
 
