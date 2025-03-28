@@ -6,7 +6,7 @@ const page = () => {
   return (
     <section className='w-full   flex pb-16 flex-col  justify-start items-center pt-16 h-full'>
       <MiniSidebar />
-      <div className='w-full px-4 md:pr-8 md:pl-18 lg:px-12 xl:px-16 2xl:px-24 flex-col flex justify-start border-b-2 border-UIslate-500  items-start'>
+      <div className='w-full px-4 md:pr-10 md:pl-24 lg:pr-16 lg:pl-32 xl:pr-20 xl:pl-36  flex-col flex justify-start border-b-2 border-UIslate-500  items-start'>
         <Backcard />
         <MentorsPcard />
       </div>
