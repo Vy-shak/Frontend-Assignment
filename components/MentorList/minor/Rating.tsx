@@ -13,10 +13,10 @@ function Rating({ rating, reviews }: rating) {
     return (
         <div style={{ backgroundColor: "hsla(215, 22%, 27%, 0.4)" }} className='w-full relative gap-x-2 -mt-6 py-1 z-10 flexSide rounded-t-0  rounded-b-lg'>
             <div className='flexSide space-x-2'>
-                {RatingArray.map((item,index) => {
+                {RatingArray.map((item) => {
                     if (item <= rating) {
                         return (
-                                <Image key={index} alt='starsIcon' src={Stars} />
+                                <Image key={item} alt='starsIcon' src={Stars} />
                         )
                     }
                 })}

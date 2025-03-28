@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { VerifyIcon } from '../../public/index'
 import useMentorStore from '@/lib/states/useMentordata'
 import useDataMissing from '@/app/hooks/DataMissing'
+import Rating from '../MentorList/minor/Rating'
 
 
 function MentorsPcard() {
@@ -15,7 +16,10 @@ function MentorsPcard() {
     return (
         <div className='w-full cursor-pointer flex justify-between items-stretch bg-white py-6'>
             <div className='flex gap-x-5 justify-between items-start w-full'>
-                {mentor?.profileImg && <Image alt='profileImg' className='h-full  rounded-lg object-contain ' src={mentor.profileImg} />}
+            <div className='flexStart min-w-52 flex-col'>
+         {mentor?.profileImg &&<Image alt='profileImg' className='h-full w-full  rounded-lg object-contain ' src={mentor.profileImg} />}
+         {mentor?.rating&&mentor.reviews&&<Rating reviews={mentor?.reviews} rating={mentor?.rating} />}
+         </div>
                 <div className='flex justify-stretch items-center w-full h-full gap-y-3  flex-col'>
                     <div className='w-full flex justify-between items-start '>
                         <div className='flexStart gap-y-1 flex-col w-full'>
