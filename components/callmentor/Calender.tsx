@@ -69,9 +69,8 @@ function Calender() {
                         <div className='w-full h-full' key={index}></div>
                     ))}
                     {daysInmonth.map((item, index) => (
-                        <div onClick={()=>updatetime({type:"date",val:item})}  className={`text-md ${events.date==item?"bg-UIslate-700 cursor-pointer text-white":null} text-UIslate-500  font-medium w-4 h-4 rounded p-4 flexCenter`} key={index + ""}>{item.getDate()}</div>
+                        <div onClick={()=>updatetime({type:"date",val:item})}  className={`text-md ${events.date==item?"bg-UIslate-700 hover:bg-none  cursor-pointer text-white":""} text-UIslate-500 hover:bg-UIslate-300  font-medium w-4 h-4 rounded p-4 flexCenter`} key={index + ""}>{item.getDate()}</div>
                     ))}
-
                 </div>
             </div>
         </div>

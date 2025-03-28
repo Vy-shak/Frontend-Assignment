@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dmSans.variable} antialiased flexStart w-full h-full`}
+        className={`${dmSans.variable} antialiased  flexStart w-full h-full`}
       >
         <Sidebar/>
         <Navbar/>

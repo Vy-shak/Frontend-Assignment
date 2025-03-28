@@ -18,9 +18,9 @@ function Timeslot() {
                 <Image alt='calendericon' src={BlueClock} />
                 <span className='text-lg text-UIslate-900 font-medium'>Date</span>
             </div>
-            <div className='w-full gap-y-6 h-full rounded-lg flex-col flexStart px-6 py-3 bg-UIslate-50 border-2 border-slate-300'>
+            <div className='w-full gap-y-6 h-full rounded-lg  flex-col flexStart px-6 py-3 bg-UIslate-50 border-2 border-slate-300'>
                 <span className='text-md text-UIslate-900 font-medium'>{newDate}</span>
-                <div className='w-full overflow-y-scroll h-72'>
+                <div className='w-full overflow-y-scroll scrollbar-thin custom-scrollbar h-72'>
                     <div className='w-full gap-x-3 py-2 px-1 gap-y-4 grid grid-cols-2'>
                         {timeSlots.map((item) => (
                             <TimeslotCard key={item.id} time={item.time} />

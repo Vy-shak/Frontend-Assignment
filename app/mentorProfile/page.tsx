@@ -9,9 +9,13 @@ const page = () => {
         <Backcard/>
         <MentorsPcard/>
         </div>
-        <section className='w-full gap-y-10  scroll-smooth flex px-18 flex-col justify-start items-center'>
-            <Services/>
+        <section className='w-full gap-y-10  scroll-smooth flex  flex-col justify-start items-center'>
+          <div className='w-full flexStart px-18 '>
+          <Services/>
+          </div>
+            <div className='w-full px-18 pt-4 flexStart border-t-2'>
             <Review/>
+            </div>
         </section>
     </section>
   )

@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 function Review() {
     return (
-        <section className='w-full flex-col gap-y-7 flexStart'>
+        <section className='w-full  flex-col gap-y-7 flexStart'>
             <div className='w-full flexStart flex-col gap-y-2'>
                 <span className='text-xl text-UIslate-900 font-medium'>Reviews</span>
                 <div className='w-full flexSide gap-x-2'>
