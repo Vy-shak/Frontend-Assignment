@@ -5,15 +5,15 @@ import DmEditor from '@/components/textEditor/Dmeditor'
 
 function page() {
     return (
-        <section className='w-full px-28  flex pb-16 flex-col pl-28 justify-start items-center pt-16 h-full'>
-            <div className='w-full flex  justify-start border-b-2 border-UIslate-500 py-6  items-start'>
+        <section className='w-full pt-16  flex pb-16 flex-col  justify-start items-center  h-full'>
+            <div className='w-full pl-18 pr-28  flex  justify-start border-b-2 border-UIslate-500 py-6  items-start'>
                 <Backcard />
                 <div className='w-full flexStart gap-y-4 flex-col'>
                     <MentorName />
                     <Guidance id={guidanceData.id} details={guidanceData.details} bulletpoints={guidanceData.bulletpoints} serviceType={guidanceData.serviceType} subHeading={guidanceData.subHeading} />
                 </div>
             </div>
-            <div className='w-full gap-y-5 pt-6 flexStart px-18 flex-col'>
+            <div className='w-full pl-44 pr-28 gap-y-5 pt-6 flexStart  flex-col'>
                     <span className='text-xl whitespace-nowrap font-medium text-UIslate-900'>Your question</span>
                     <div className='w-full flexStart'>
                         <DmEditor />
