@@ -65,7 +65,7 @@ const Menubar = ({ editor }: EditorContentProps) => {
 
     return (
         <>
-            <div className={`w-full bg-white  border-2 rounded-t-md border-b-0 outline-none border-UIslate-900  flexSide px-4 py-3 gap-x-3`}>
+            <div className={`w-full bg-white  border-2 rounded-t-md border-b-0 outline-none border-UIslate-900  flex justify-between items-center px-4 py-3 gap-x-3`}>
                 <HeadingComp setHeading={setHeading} heading={Heading} />
                 {toolbarItems.map(({ icon, command, type ,id}) => (
                     <div key={id} className={` px-4 cursor-pointer  rounded py-1 ${editor.isActive(type) ? 'bg-UIblue-50 ' : 'bg-none'}`}>

@@ -53,7 +53,7 @@ function Calender() {
                 <Image alt='calendericon' src={CalenderIcon} />
                 <span className='text-lg text-UIslate-900 font-medium'>Date</span>
             </div>
-            <div className='w-full rounded-lg flex-col flexStart p-3 bg-UIslate-50 border-2 border-slate-300'>
+            <div className='w-full rounded-md flex-col flexStart p-3 bg-UIslate-50 border-2 border-slate-300'>
                 <div className='w-full bg-slate-50 flex justify-between items-center'>
                     <span className='text-md text-UIslate-900 font-medium'>{currentDate.toLocaleString('en-US', { month: 'long', year: 'numeric' })}</span>
                     <div className='flexCenter gap-x-2'>

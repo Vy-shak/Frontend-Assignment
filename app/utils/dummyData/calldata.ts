@@ -15,7 +15,7 @@ const guidanceData = {
             id:"service type",
             type:"Service type",
             icon:VideoIcon,
-            text:"1:1call"
+            text:"1:1 Call"
         },
         {
             id:"duration",

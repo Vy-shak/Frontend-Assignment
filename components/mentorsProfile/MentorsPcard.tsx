@@ -5,7 +5,6 @@ import SocialHandle from './minor/SocialHandle'
 import Image from 'next/image'
 import { VerifyIcon } from '../../public/index'
 import useMentorStore from '@/lib/states/useMentordata'
-import useDataMissing from '@/app/hooks/DataMissing'
 import Rating from '../MentorList/minor/Rating'
 
 
