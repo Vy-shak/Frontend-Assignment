@@ -1,6 +1,6 @@
 import React from 'react'
 import { Backcard, Guidance, MentorName } from '../../../components/index'
-import { guidanceData } from '../../utils/dummyData/calldata'
+import { ResumeData } from '../../utils/dummyData/calldata'
 import DmEditor from '@/components/textEditor/Dmeditor'
 
 function page() {
@@ -10,7 +10,7 @@ function page() {
                 <Backcard />
                 <div className='w-full flexStart gap-y-4 flex-col'>
                     <MentorName />
-                    <Guidance id={guidanceData.id} details={guidanceData.details} bulletpoints={guidanceData.bulletpoints} serviceType={guidanceData.serviceType} subHeading={guidanceData.subHeading} />
+                    <Guidance id={ResumeData.id} details={ResumeData.details} bulletpoints={ResumeData.bulletpoints} serviceType={ResumeData.serviceType} subHeading={ResumeData.subHeading} />
                 </div>
             </div>
             <div className='w-full pl-44 pr-28 gap-y-5 pt-6 flexStart  flex-col'>

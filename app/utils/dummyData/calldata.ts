@@ -1,4 +1,4 @@
-import { VideoIcon,BlueClock,RupeeIcon } from "../../../public/index"
+import { VideoIcon,BlueClock,RupeeIcon,MessageIcon } from "../../../public/index"
 
 
 const guidanceData = {
@@ -32,4 +32,34 @@ const guidanceData = {
     ]
 }
 
-export {guidanceData}
+const ResumeData = {
+    id: 2,
+    serviceType: "Resume Review",
+    subHeading: "I'll refine your resume to land better opportunities.",
+    bulletpoints: [
+        "I will identify the mistakes in your copy.",
+        "I will refine and improve your copy for better clarity and impact."
+    ],
+    details: [
+        {
+            id: "serviceType",
+            type: "Service type",
+            icon: MessageIcon, 
+            text: "Priority DM"
+        },
+        {
+            id: "replies",
+            type: "Replies",
+            icon: BlueClock, 
+            text: "In 1 day"
+        },
+        {
+            id: "amount",
+            type: "Amount",
+            icon: RupeeIcon, 
+            text: "₹100"
+        }
+    ]
+}
+
+export {guidanceData,ResumeData}
