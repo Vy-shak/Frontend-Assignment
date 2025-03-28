@@ -7,7 +7,7 @@ const mentors = [
     id: 1,
     profileImg: Jhony,
     rating: 5,
-    reviews: 120,
+    reviews: 5,
     Name: "Jonny Rose",
     role: "Sr. Software Engineering at Google",
     verified: true,
@@ -18,7 +18,7 @@ const mentors = [
     id: 2,
     profileImg: Dev,
     rating: 4,
-    reviews: 95,
+    reviews: 4,
     Name: "Dev Jain",
     role: "Sr. Software Engineering at Microsoft",
     verified: true,
@@ -29,7 +29,7 @@ const mentors = [
     id: 3,
     profileImg: Rishi,
     rating: 5,
-    reviews: 110,
+    reviews: 5,
     Name: "Rishi Mehta",
     role: "Sr. Software Engineering at JP Morgan",
     verified: true,
@@ -39,7 +39,7 @@ const mentors = [
     id: 4,
     profileImg: Mistry,
     rating: 3,
-    reviews: 80,
+    reviews: 3,
     Name: "Heet Mistry",
     role: "Sr. Software Engineering at Zomato",
     verified: false,
@@ -51,12 +51,14 @@ const mentors = [
 
 function page() {
   return (
-    <section className='w-full overflow-y-scroll   flex flex-col justify-start items-center pl-52 pt-16 h-full'>
+    <section className='w-full  pr-0  flex flex-col justify-start items-center pl-52 pt-16 h-full'>
       <Mentorsbadge />
-      <section className='w-full gap-y-10  scroll-smooth flex px-18 flex-col justify-start items-center'>
+      <section className='w-full overflow-y-scroll gap-y-10  scroll-smooth flex px-18 flex-col justify-start items-center'>
+        <div className='w-full'>
         <SearchBar />
         <FilterTabs/>
-        <div className='w-full flexSide gap-y-4 flex-col'>
+        </div>
+        <div className='w-full pl-4 flexSide gap-y-4 flex-col'>
           {mentors.map((item)=>(
             <MentorCard key={item.id} rating={item.rating} description={item.description} verified={item.verified} reviews={item.reviews}  role={item.role} Name={item.Name} profileImg={item.profileImg}/>
           ))}
