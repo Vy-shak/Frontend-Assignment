@@ -13,7 +13,7 @@ function Services() {
             <span className='text-xl text-UIslate-900 font-medium'>Services</span>
             <div className='w-full flexStart flex-col gap-y-9'>
                 <ServiceTab />
-                <div className='w-full grid grid-cols-1 '>
+                <div className='w-full grid gap-y-3 grid-cols-1 lg:gap-x-4 lg:grid-cols-2 '>
                     {dummyServices.map((item) => {
                         if (activeService===serviceTypes.all) {
                             return (

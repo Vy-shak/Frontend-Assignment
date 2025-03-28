@@ -10,13 +10,13 @@ const page = () => {
         <Backcard />
         <MentorsPcard />
       </div>
-      <section className='w-full px-4 md:pr-10 md:pl-24 lg:pr-16 lg:pl-32 xl:pr-20 xl:pl-36   scroll-smooth flex  flex-col justify-start items-center'>
-        <div className='w-full pt-2  flexStart '>
+      <section className='w-full scroll-smooth flex  flex-col justify-start items-center'>
+        <div className='w-full pt-2 px-4 md:pr-10 md:pl-24 lg:pr-16 lg:pl-32 xl:pr-20 xl:pl-36    flexStart '>
           <Services />
         </div>
-        <div className='w-full  pt-4 flexStart border-t-2'>
+        {/* <div className='w-full  pt-4 flexStart border-t-2'>
           <Review />
-        </div>
+        </div> */}
       </section>
     </section>
   )

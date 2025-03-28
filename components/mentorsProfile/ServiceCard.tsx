@@ -21,7 +21,7 @@ function ServiceCard({ serviceHead, profileImg, description, type, details }: Se
     return (
         //@ts-ignore
         <Link href={`${path[type]}`} className='w-full flexStart'>
-                <div className='bg-white cursor-pointer h-fit  flexStart gap-y-6 flex-col  outline-1 p-6 outline-UIslate-300 rounded-lg'>
+                <div className='bg-white cursor-pointer h-fit  flexStart gap-y-6 flex-col  outline-1 p-3 outline-UIslate-300 rounded-lg'>
             <div className='w-full flex-col flexStart gap-y-8'>
                 {profileImg&&<Image className='w-full' alt='profileimg' src={profileImg}/>}
                 <div className='w-full flex justify-between items-center'>
@@ -34,7 +34,7 @@ function ServiceCard({ serviceHead, profileImg, description, type, details }: Se
                     <p className='text-sm text-UIslate-700 font-semibold'>{description}</p>
                 </div>
             </div>
-            <div className='flexSide w-full gap-x-3'>
+            <div className='justify-start flex-col sm:flex-row gap-y-2 items-center flex sm:flex w-full gap-x-2'>
                 {details.map((item) => (
                     <Serviceblock key={item.id} text={item.text} icon={item.icon} type={item.type} />
                 ))}
