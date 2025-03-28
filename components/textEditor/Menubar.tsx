@@ -4,9 +4,9 @@ import { useState } from 'react'
 import { selectImg, uploadFromdevice } from './utils/selectImg'
 import HeadingComp from './minor/Headings'
 import { useRef } from 'react'
-import { Editor,  EditorContentProps, } from '@tiptap/react'
+import { Editor, EditorContentProps, } from '@tiptap/react'
 import Image, { StaticImageData } from 'next/image'
-import { Boldicon, BulletIcon, NumberListicon, Link, ImojiIcon, Uploadimg, UploadVideo, ItalicIcon, Underlineicon, Quoteicon, StrikeIcon } from '../../public/index'
+import { Boldicon, BulletIcon, Photoicon, NumberListicon, Link, ImojiIcon, Uploadimg, UploadVideo, ItalicIcon, Underlineicon, Quoteicon, StrikeIcon } from '../../public/index'
 import { addLink } from './utils/addLink'
 
 type Level = 1 | 2 | 3 | 4 | 5 | 6
@@ -17,7 +17,7 @@ export interface headingLevel {
 }
 
 interface toolbar {
-    id:number
+    id: number
     icon: StaticImageData,
     command: (editor: Editor) => void,
     type: string
@@ -31,9 +31,9 @@ const toolbarItems: toolbar[] = [
     { id: 5, icon: Quoteicon, command: (editor) => editor.chain().focus().toggleBlockquote().run(), type: 'blockquote' },
     { id: 6, icon: BulletIcon, command: (editor) => editor.chain().focus().toggleBulletList().run(), type: 'bulletList' },
     { id: 7, icon: NumberListicon, command: (editor) => editor.chain().focus().toggleOrderedList().run(), type: 'orderedList' },
-    { id: 8, icon: Link, command: addLink, type: 'link' }, 
-    { id: 9, icon: UploadVideo, command: () => {}, type: 'video' },
-    { id: 10, icon: ImojiIcon, command: () => {}, type: 'imoji' },
+    { id: 8, icon: Link, command: addLink, type: 'link' },
+    { id: 9, icon: UploadVideo, command: () => { }, type: 'video' },
+    { id: 10, icon: ImojiIcon, command: () => { }, type: 'imoji' },
 ];
 
 
@@ -43,11 +43,16 @@ const Menubar = ({ editor }: EditorContentProps) => {
     const [imgUrl, setimgUrl] = useState<string>("")
     const [Heading, setHeading] = useState<headingLevel>({ heading: "Heading 1", level: 1 })
 
+
     useEffect(() => {
         if (!editor || !imgUrl) return;
     
         editor.chain().focus()
-            .insertContent(`<div class="flex"><img src="${imgUrl}" alt="Uploaded Image" /></div>`)
+            .insertContent(
+                `<div class="custom-image-container">
+                    <img src="${imgUrl}" alt="Uploaded Image" />
+                </div>`
+            )
             .run();
     }, [editor, imgUrl]);
 
@@ -68,13 +73,13 @@ const Menubar = ({ editor }: EditorContentProps) => {
         <>
             <div className={`w-full bg-white  border-2 rounded-t-md border-b-0 outline-none border-UIslate-900  flex justify-between items-center px-4 py-3 gap-x-3`}>
                 <HeadingComp setHeading={setHeading} heading={Heading} />
-                {toolbarItems.map(({ icon, command, type ,id}) => (
+                {toolbarItems.map(({ icon, command, type, id }) => (
                     <div key={id} className={` px-4 cursor-pointer  rounded-xs py-1 ${editor.isActive(type) ? 'bg-UIblue-50 ' : 'bg-none'}`}>
                         <Image
-                        alt={type}
-                        src={icon}
-                        onClick={() => editor && command(editor)}
-                    />
+                            alt={type}
+                            src={icon}
+                            onClick={() => editor && command(editor)}
+                        />
                     </div>
                 ))}
                 <div className='cursor-pointer' onClick={() => uploadFromdevice(ImageRef)} >

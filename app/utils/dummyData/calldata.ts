@@ -57,7 +57,7 @@ const ResumeData = {
             id: "amount",
             type: "Amount",
             icon: RupeeIcon, 
-            text: "₹100"
+            text: "100"
         }
     ]
 }

@@ -10,6 +10,7 @@ import Link from '@tiptap/extension-link'
 import Blockquote from '@tiptap/extension-blockquote';
 import "./styless.css"
 import Underline from '@tiptap/extension-underline'
+import CustomImage from './customExtension/customImage'
 
 const DmEditor = () => {
     const editor = useEditor({
@@ -18,13 +19,7 @@ const DmEditor = () => {
             BulletList,
             Blockquote,
             ListItem,
-            Image.configure({
-                inline: true,  
-                HTMLAttributes: {
-                    class: 'my-custom-image-class'  
-                },
-                allowBase64: true 
-            }),
+            CustomImage,
             Underline,
             Link.configure({
                 openOnClick: true,

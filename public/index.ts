@@ -46,10 +46,11 @@ import UploadVideo from "./Editor/UploadVideoicon.svg"
 import ImojiIcon from "./Editor/ImojiIcon.svg"
 import Quoteicon from "./Editor/QuoteIcon.svg"
 import Erroricon from "./Icons/Erroricon.svg"
+import Photoicon from "./Icons/PhotoIcon.svg"
 
 
 
 
 
 
-export {MentorIcon,BookingIcon, Erroricon, NumberListicon, Quoteicon, Uploadimg, BulletIcon,Link,UploadVideo,ImojiIcon, Boldicon,ItalicIcon,StrikeIcon,Underlineicon, Stars, CalenderIcon, CheveronRight, Profile1,Profile2,Profile3, Product,WebinarIcon, Tumbnail2, RupeeIcon,MessageIcon,Block,BlueClock,VideoIcon, Arrowback, LinkdinIcon, Mediumicon,InstagramIcon,ShareIcon,Xicon, ClockIcon, SearchIcon, CloseIcon, TrendingIcon, Jhony,Dev,Rishi,Mistry, Bellicon, VerifyIcon, ProfileImg, CheveronDown,JobIcon,PriorityIcon}
+export {MentorIcon,BookingIcon, Photoicon, Erroricon, NumberListicon, Quoteicon, Uploadimg, BulletIcon,Link,UploadVideo,ImojiIcon, Boldicon,ItalicIcon,StrikeIcon,Underlineicon, Stars, CalenderIcon, CheveronRight, Profile1,Profile2,Profile3, Product,WebinarIcon, Tumbnail2, RupeeIcon,MessageIcon,Block,BlueClock,VideoIcon, Arrowback, LinkdinIcon, Mediumicon,InstagramIcon,ShareIcon,Xicon, ClockIcon, SearchIcon, CloseIcon, TrendingIcon, Jhony,Dev,Rishi,Mistry, Bellicon, VerifyIcon, ProfileImg, CheveronDown,JobIcon,PriorityIcon}
