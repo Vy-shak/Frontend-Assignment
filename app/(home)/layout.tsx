@@ -24,7 +24,6 @@ export default function RootLayout({
       <body
         className={`${dmSans.variable} antialiased flexStart  w-full h-full`}
       >
-        <Sidebar/>
         <Navbar/>
         {children}
       </body>

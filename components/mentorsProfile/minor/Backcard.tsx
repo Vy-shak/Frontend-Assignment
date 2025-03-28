@@ -9,7 +9,7 @@ import { useRouter } from 'next/navigation'
 function Backcard() {
     const Router = useRouter()
     return (
-        <div onClick={()=>Router.back()} className='w-28 gap-x-1 cursor-pointer pt-2 flex justify-center pl-5 items-center h-full'>
+        <div onClick={()=>Router.back()} className=' gap-x-1 cursor-pointer pt-2 flex justify-center  items-center h-full'>
         <Image alt='backarrow' src={Arrowback} />
         <span className='text-xs text-UIslate-500 font-medium'>Back</span>
     </div>

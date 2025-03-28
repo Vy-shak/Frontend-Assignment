@@ -13,7 +13,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     return (
       <html lang="en">
         <body className={`${dmSans.variable} antialiased flexStart w-full h-full`}>
-            <MiniSidebar/>
+            {/* <MiniSidebar/> */}
             <Navbar />
             {children}
             </body>

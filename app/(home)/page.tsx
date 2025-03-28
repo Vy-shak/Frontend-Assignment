@@ -51,9 +51,9 @@ const mentors = [
 
 function page() {
   return (
-    <section className='w-full   pr-0  flex flex-col justify-start items-center pl-52 pt-16 h-full'>
+    <section className='w-full  pr-0  flex flex-col justify-start items-center  h-full'>
       <Mentorsbadge />
-      <section className='w-full overflow-y-scroll gap-y-10  scroll-smooth flex px-18 flex-col justify-start items-center'>
+      <section className='w-full overflow-y-scroll  scroll-smooth flex flex-col justify-start items-center'>
         <div className='w-full'>
         <SearchBar />
         <FilterTabs/>

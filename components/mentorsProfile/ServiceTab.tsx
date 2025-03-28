@@ -34,7 +34,7 @@ function ServiceTab() {
 
     return (
         <div className='w-full flexSide'>
-            <div className='w-fit flexSide gap-x-2 bg-UIslate-100 px-2 rounded-md py-1'>
+            <div className='w-fit flexSide flex-wrap gap-x-2 bg-UIslate-100 px-2 rounded-md py-1'>
                 {serviceTabs.map((item) => (
                     <Servicebtn  key={item.id} text={item.name} />
                 ))}

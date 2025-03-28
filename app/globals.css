@@ -199,7 +199,11 @@
   --sidebar-ring: oklch(0.553 0.013 58.071);
 }
 
-::-webkit-scrollbar {
+/* * {
+  border: 2px solid red !important;
+} */
+
+/* ::-webkit-scrollbar {
   width: 12px;
 }
 
@@ -232,7 +236,7 @@
 
 .custom-scrollbar::-webkit-scrollbar-track {
   background: transparent;
-}
+} */
 
 
 .flexCenter {
