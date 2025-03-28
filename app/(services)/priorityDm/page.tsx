@@ -5,8 +5,8 @@ import DmEditor from '@/components/textEditor/Dmeditor'
 
 function page() {
     return (
-        <section className='w-full   flex pb-16 flex-col pl-52 justify-start items-center pt-16 h-full'>
-            <div className='w-full flex  justify-start border-b-2 border-UIslate-500 py-6 pr-18 items-start'>
+        <section className='w-full px-28  flex pb-16 flex-col pl-28 justify-start items-center pt-16 h-full'>
+            <div className='w-full flex  justify-start border-b-2 border-UIslate-500 py-6  items-start'>
                 <Backcard />
                 <div className='w-full flexStart gap-y-4 flex-col'>
                     <MentorName />

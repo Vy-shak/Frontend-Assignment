@@ -14,7 +14,8 @@ import MentorName from "./callmentor/minor/MentorName";
 import Calender from "./callmentor/Calender";
 import Slot from "./callmentor/sections/Slot";
 import Timezone from "./Timezone";
+import MiniSidebar from "./general/MiniSidebar"
 
 
 
-export {Button,Sidebar,Navbar, Timezone, Calender, Slot, MentorName, Guidance, Review, Services, Backcard, MentorCard, MentorsPcard, FilterTabs, Mentorsbadge,SearchBar}
+export {Button,Sidebar,Navbar, MiniSidebar, Timezone, Calender, Slot, MentorName, Guidance, Review, Services, Backcard, MentorCard, MentorsPcard, FilterTabs, Mentorsbadge,SearchBar}
