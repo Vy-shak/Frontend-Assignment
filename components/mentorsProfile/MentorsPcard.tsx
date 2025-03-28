@@ -29,7 +29,7 @@ function MentorsPcard() {
                                 </div>
                                 <span className='font-medium text-UIslate-700 text-lg'>{mentor?.role}</span>
                             </div>
-                            <div className='flex flex-col gap-y-3 justify-start  items-start'>
+                            <div className='flex flex-col gap-y-3 justify-start md:items-end items-start'>
                                 <SessionNo />
                                 <SocialHandle />
                             </div>

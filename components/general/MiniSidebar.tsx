@@ -29,7 +29,7 @@ const sidebarData = [
 
 function Sidebar() {
   return (
-    <div className='w-fit gap-y-6 cursor-pointer pt-24 fixed top-0 left-0 z-50 px-6  h-full flexStart flex-col bg-UIslate-50  border-r-2 '>
+    <div className='w-fit gap-y-6 hidden md:flex cursor-pointer pt-24 fixed top-0 left-0 z-50 px-2  h-full justify-start items-start flex-col bg-UIslate-50  border-r-2 '>
         {sidebarData.map((item)=>(
             <div key={item.id} className={`w-fit h-fit px-3 py-2  rounded-md ${item.active?"bg-UIslate-200":null}`}>
                 <Image key={item.id} alt='sidebar icons' src={item.startIcon} />

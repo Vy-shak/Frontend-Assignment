@@ -1,11 +1,12 @@
 import React from 'react'
-import { MentorsPcard, Backcard, Services, Review } from '../../../components/index'
+import { MentorsPcard, Backcard, Services, Sidebar, MiniSidebar, Review } from '../../../components/index'
 
 
 const page = () => {
   return (
     <section className='w-full   flex pb-16 flex-col  justify-start items-center pt-16 h-full'>
-      <div className='w-full px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-24 flex-col flex justify-start border-b-2 border-UIslate-500  items-start'>
+      <MiniSidebar />
+      <div className='w-full px-4 md:pr-8 md:pl-18 lg:px-12 xl:px-16 2xl:px-24 flex-col flex justify-start border-b-2 border-UIslate-500  items-start'>
         <Backcard />
         <MentorsPcard />
       </div>
