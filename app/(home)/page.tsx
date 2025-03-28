@@ -6,7 +6,7 @@ const mentors = [
   {
     id: 1,
     profileImg: Jhony,
-    rating: 4.9,
+    rating: 5,
     reviews: 120,
     Name: "Jonny Rose",
     role: "Sr. Software Engineering at Google",
@@ -17,7 +17,7 @@ const mentors = [
   {
     id: 2,
     profileImg: Dev,
-    rating: 4.7,
+    rating: 4,
     reviews: 95,
     Name: "Dev Jain",
     role: "Sr. Software Engineering at Microsoft",
@@ -28,7 +28,7 @@ const mentors = [
   {
     id: 3,
     profileImg: Rishi,
-    rating: 4.8,
+    rating: 5,
     reviews: 110,
     Name: "Rishi Mehta",
     role: "Sr. Software Engineering at JP Morgan",
@@ -38,7 +38,7 @@ const mentors = [
   {
     id: 4,
     profileImg: Mistry,
-    rating: 4.6,
+    rating: 3,
     reviews: 80,
     Name: "Heet Mistry",
     role: "Sr. Software Engineering at Zomato",
@@ -58,7 +58,7 @@ function page() {
         <FilterTabs/>
         <div className='w-full flexSide gap-y-4 flex-col'>
           {mentors.map((item)=>(
-            <MentorCard key={item.id} description={item.description} verified={item.verified} reviews={item.reviews} rating={item.rating} role={item.role} Name={item.Name} profileImg={item.profileImg}/>
+            <MentorCard key={item.id} rating={item.rating} description={item.description} verified={item.verified} reviews={item.reviews}  role={item.role} Name={item.Name} profileImg={item.profileImg}/>
           ))}
         </div>
       </section>
