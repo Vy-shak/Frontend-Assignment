@@ -12,7 +12,7 @@ function TimeslotCard({time}:slot) {
         updatetime({type:"time",val:time})
     };
   return (
-    <div onClick={handleClick} className={`w-full ${events.time==time?"border-green-600 bg-UIslate-200":null} border-2  bg-UIslate-50 rounded flexCenter`}>
+    <div onClick={handleClick} className={`w-full border-2 ${events.time==time?"!border-UIslate-500 ":"!border-UIslate-200"} rounded flexCenter`}>
       <span className='font-medium text-UIslate-700 py-1.5 text-xs'>{time}</span>
     </div>
   )

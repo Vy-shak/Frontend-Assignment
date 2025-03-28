@@ -16,7 +16,7 @@ function Timeslot() {
         <div className='w-full h-full cursor-pointer gap-y-2 flex-col flexStart'>
             <div className='w-full gap-x-1.5 flexSide'>
                 <Image alt='calendericon' src={BlueClock} />
-                <span className='text-lg text-UIslate-900 font-medium'>Date</span>
+                <span className='text-lg text-UIslate-900 font-medium'>Time</span>
             </div>
             <div className='w-full gap-y-6 h-full rounded-lg  flex-col flexStart px-6 py-3 bg-UIslate-50 border-2 border-slate-300'>
                 <span className='text-md text-UIslate-900 font-medium'>{newDate}</span>

@@ -163,7 +163,7 @@
   font-weight: var(--fw-900);
 }
 
-.dark {
+/* .dark {
   --background: oklch(0.147 0.004 49.25);
   --foreground: oklch(0.985 0.001 106.423);
   --card: oklch(0.216 0.006 56.043);
@@ -195,7 +195,7 @@
   --sidebar-accent-foreground: oklch(0.985 0.001 106.423);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.553 0.013 58.071);
-}
+} */
 
 ::-webkit-scrollbar {
   width: 12px;
