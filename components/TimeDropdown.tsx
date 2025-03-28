@@ -1,8 +1,7 @@
 import React from 'react'
 import { timezones } from '@/app/utils/dummyData/time'
 import { Dispatch, SetStateAction } from 'react'
-import { AnimatePresence, motion } from 'motion/react'
-import { div } from 'motion/react-client'
+import { motion } from 'motion/react'
 
 interface dropdown {
     setterfn: Dispatch<SetStateAction<string>>

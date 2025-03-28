@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { selectImg, uploadFromdevice } from './utils/selectImg'
 import HeadingComp from './minor/Headings'
 import { useRef } from 'react'
-import { Editor, EditorContent, EditorContentProps, } from '@tiptap/react'
+import { Editor,  EditorContentProps, } from '@tiptap/react'
 import Image, { StaticImageData } from 'next/image'
 import { Boldicon, BulletIcon, NumberListicon, Link, ImojiIcon, Uploadimg, UploadVideo, ItalicIcon, Underlineicon, Quoteicon, StrikeIcon } from '../../public/index'
 import { addLink } from './utils/addLink'
@@ -43,11 +43,12 @@ const Menubar = ({ editor }: EditorContentProps) => {
     const [imgUrl, setimgUrl] = useState<string>("")
     const [Heading, setHeading] = useState<headingLevel>({ heading: "Heading 1", level: 1 })
 
-
     useEffect(() => {
         if (!editor || !imgUrl) return;
-
-        editor.chain().focus().insertContent(<div className='flex'><img src="${imgUrl}" /></div>).setImage({ src: imgUrl }).run();
+    
+        editor.chain().focus()
+            .insertContent(`<div class="flex"><img src="${imgUrl}" alt="Uploaded Image" /></div>`)
+            .run();
     }, [editor, imgUrl]);
 
     useEffect(() => {
@@ -68,7 +69,7 @@ const Menubar = ({ editor }: EditorContentProps) => {
             <div className={`w-full bg-white  border-2 rounded-t-md border-b-0 outline-none border-UIslate-900  flex justify-between items-center px-4 py-3 gap-x-3`}>
                 <HeadingComp setHeading={setHeading} heading={Heading} />
                 {toolbarItems.map(({ icon, command, type ,id}) => (
-                    <div key={id} className={` px-4 cursor-pointer  rounded py-1 ${editor.isActive(type) ? 'bg-UIblue-50 ' : 'bg-none'}`}>
+                    <div key={id} className={` px-4 cursor-pointer  rounded-xs py-1 ${editor.isActive(type) ? 'bg-UIblue-50 ' : 'bg-none'}`}>
                         <Image
                         alt={type}
                         src={icon}

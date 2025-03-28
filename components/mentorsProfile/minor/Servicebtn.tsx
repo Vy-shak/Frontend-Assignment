@@ -1,5 +1,4 @@
 import React from 'react'
-import { Dispatch,SetStateAction } from 'react'
 import {motion} from "motion/react"
 import { useActiveServicesStore } from '@/lib/states/activeServices'
 import { serviceTypes } from '@/app/@types/state/Service'

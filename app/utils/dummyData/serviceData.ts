@@ -1,6 +1,6 @@
 
-import {WebinarIcon,Block,VideoIcon,MessageIcon, RupeeIcon, Product, BlueClock, Tumbnail2} from "../../public/index"
-import { Servicecardtype,ServiceDetail,serviceTypes } from "../@types/state/Service";
+import {WebinarIcon,Block,VideoIcon,MessageIcon, RupeeIcon, Product, BlueClock, Tumbnail2} from "../../../public/index"
+import { Servicecardtype,serviceTypes } from "../../@types/state/Service";
 
   const dummyServices: Servicecardtype[] = [
     {

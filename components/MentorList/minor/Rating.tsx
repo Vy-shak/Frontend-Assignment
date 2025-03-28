@@ -1,7 +1,6 @@
 import React from 'react'
 import { Stars } from '../../../public/index'
 import Image from 'next/image'
-import { div } from 'motion/react-client';
 
 interface rating {
     rating: number,

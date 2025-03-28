@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React  from 'react'
 import { CloseIcon } from '../../../public/index'
 import Image from 'next/image'
 import useFilterSelection from '@/lib/states/selectedFilters'

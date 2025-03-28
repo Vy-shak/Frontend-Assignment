@@ -13,11 +13,25 @@ import Underline from '@tiptap/extension-underline'
 
 const DmEditor = () => {
     const editor = useEditor({
-        extensions: [StarterKit,BulletList,Blockquote,ListItem,Image,Underline,Link.configure({
-            openOnClick: true,
-            autolink: true,
-            linkOnPaste: true,
-          }),],
+        extensions: [
+            StarterKit,
+            BulletList,
+            Blockquote,
+            ListItem,
+            Image.configure({
+                inline: true,  
+                HTMLAttributes: {
+                    class: 'my-custom-image-class'  
+                },
+                allowBase64: true 
+            }),
+            Underline,
+            Link.configure({
+                openOnClick: true,
+                autolink: true,
+                linkOnPaste: true,
+            }),
+        ],
         content: '<p>The editor is fully working please do check it out</p>',
         editorProps: {
             attributes: {

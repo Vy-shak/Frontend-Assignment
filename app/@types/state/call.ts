@@ -1,5 +1,4 @@
 import { ServiceDetail } from "./Service";
-import { VideoIcon,BlueClock,RupeeIcon } from "../../../public/index";
 
 
 export interface guidance {

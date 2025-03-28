@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import ServiceTab from './ServiceTab'
-import { dummyServices } from '@/app/utils/dummyData'
+import { dummyServices } from '@/app/utils/dummyData/serviceData'
 import { serviceTypes } from '@/app/@types/state/Service'
 import ServiceCard from './ServiceCard'
 import { useActiveServicesStore } from '@/lib/states/activeServices'

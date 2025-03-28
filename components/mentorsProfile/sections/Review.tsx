@@ -1,4 +1,3 @@
-import { StaticImageData } from 'next/image'
 import { Stars } from '../../../public/index'
 import React from 'react'
 import ReviewCard from '../ReviewCard'

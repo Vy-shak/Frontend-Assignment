@@ -3,8 +3,6 @@ import React, { useState } from 'react'
 import { Backcard, Guidance, MentorName, Errorpop, Button } from '../../../components/index'
 import { ResumeData } from '../../utils/dummyData/calldata'
 import DmEditor from '@/components/textEditor/Dmeditor'
-import { div } from 'motion/react-client'
-import { error } from 'console'
 
 function page() {
     const [isError,setisError] = useState(false);

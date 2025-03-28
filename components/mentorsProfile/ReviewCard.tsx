@@ -1,5 +1,4 @@
 import React from 'react'
-import { reviewData } from '@/app/utils/dummyData/Reviewdata'
 import Image from 'next/image'
 import { Stars } from "../../public/index"
 import { ReviewType } from '@/app/@types/state/Reviewtype'
