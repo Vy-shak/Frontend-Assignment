@@ -5,7 +5,7 @@ import { ReviewType } from '@/app/@types/state/Reviewtype'
 
 function ReviewCard({ rating, review, profile, author }: ReviewType) {
     return (
-        <div className='bg-white w-full border-2 gap-y-6 p-6 rounded-lg border-lg flexStart flex-col'>
+        <div className='bg-white w-full border-2 gap-y-3 md:gap-y-4 p-3 rounded-lg border-lg flexStart flex-col'>
             <div className='w-full flexStart gap-y-2 flex-col'>
                 <div className='flexSide gap-x-2'>
                     <span className='font-semibold text-UIslate-700 text-lg'>{rating}</span>
