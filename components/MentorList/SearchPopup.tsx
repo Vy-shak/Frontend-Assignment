@@ -18,7 +18,7 @@ function SearchPopup({ history }: searchref) {
     console.log(history)
     return (
         <AnimatePresence>
-            <motion.div className='bg-white absolute w-72 ml-4  mt-12 flexStart p-4 rounded-lg flex-col gap-y-2 border-2 border-UIslate-100'
+            <motion.div className='bg-white absolute w-72 ml-4  mt-10 flexStart p-4 rounded-lg flex-col gap-y-2 border-2 border-UIslate-100'
                 initial={{ opacity: 0, y: -20, scale: 0.95 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: -20, scale: 0.95 }}
