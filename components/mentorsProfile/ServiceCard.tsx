@@ -9,7 +9,10 @@ import Link from 'next/link'
 
 const path = {
     "1:1 Call":"/callmentor",
-    "Priority DM":"/priorityDm"
+    "Priority DM":"/priorityDm",
+    "Package":"/priorityDm",
+    "Webinar":"/priorityDm",
+    "Digital Product":"/priorityDm"
 }
 
 

@@ -25,7 +25,7 @@ function TimeDropdown({ setterfn, setOpen, isOpen }: dropdown) {
           transition={{
               duration: 0.3,
               type: "spring",
-          }} className='w-fit mb-14 absolute mt-20 flex-col justify-center items-start border-2 border-UIslate300 rounded-lg   gap-y-3 bg-white flex'>
+          }} className='w-xl mb-14 absolute mt-20 flex-col justify-center items-start border-2 border-UIslate300 rounded-lg   gap-y-3 bg-white flex'>
                 {timezones.map((item) => (
                     <div className='hover:bg-UIblue-50 rounded-lg hover:duration-400 w-full px-3 py-2' onClick={() => handleClick(item)} key={item.id}>
                         <span>{item.label}</span>

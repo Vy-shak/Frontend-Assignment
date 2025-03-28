@@ -61,7 +61,7 @@ function Calender() {
                         <Image onClick={moveNextmonth} className='cursor-pointer' alt='cheveron ' src={CheveronRight} />
                     </div>
                 </div>
-                <div className='grid w-full gap-3 grid-rows-6 grid-cols-7'>
+                <div className='grid w-full gap-3 cursor-pointer grid-rows-6 grid-cols-7'>
                     {weekDays.map((item) => (
                         <div className='text-md text-UIslate-500 font-medium' key={item}>{item}</div>
                     ))}
@@ -69,7 +69,7 @@ function Calender() {
                         <div className='w-full h-full' key={index}></div>
                     ))}
                     {daysInmonth.map((item, index) => (
-                        <div onClick={()=>updatetime({type:"date",val:item})}  className={`text-md ${events.date==item?"bg-UIslate-700 text-white":null} text-UIslate-500 font-medium w-4 h-4 rounded p-4 flexCenter`} key={index + ""}>{item.getDate()}</div>
+                        <div onClick={()=>updatetime({type:"date",val:item})}  className={`text-md ${events.date==item?"bg-UIslate-700 cursor-pointer text-white":null} text-UIslate-500  font-medium w-4 h-4 rounded p-4 flexCenter`} key={index + ""}>{item.getDate()}</div>
                     ))}
 
                 </div>
