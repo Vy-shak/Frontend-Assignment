@@ -13,7 +13,7 @@ const social = [
 
 function SocialHandle() {
   return (
-    <div className='flexCenter gap-x-3'>
+    <div className='flexCenter gap-x-2'>
       {social&&social.map((item)=>(
         <Image key={item.id} alt={item.alt} src={item.media}/>
       ))}
