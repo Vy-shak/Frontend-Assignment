@@ -9,7 +9,7 @@ import { useActiveServicesStore } from '@/lib/states/activeServices'
 function Services() {
     const { activeService } = useActiveServicesStore()
     return (
-        <section className='w-full flexStart  gap-y-6 flex-col'>
+        <section className='w-full flexStart  gap-y-3 flex-col'>
             <span className='text-xl text-UIslate-900 font-medium'>Services</span>
             <div className='w-full flexStart flex-col gap-y-9'>
                 <ServiceTab />

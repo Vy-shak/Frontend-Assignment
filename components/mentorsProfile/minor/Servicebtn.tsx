@@ -16,7 +16,7 @@ function Servicebtn({text}:btn) {
   return (
     <motion.div 
     onClick={handleClick} 
-    className={`${activeService==text?"bg-white":null} w-fit h-fit  cursor-pointer py-2 flexCenter rounded-md`}
+    className={`${activeService==text?"bg-white":null} w-fit h-fit px-4  cursor-pointer lg:py-3 py-2 flexCenter rounded-sm`}
     whileHover={{ 
         scale: 1.03,
         transition: { 
