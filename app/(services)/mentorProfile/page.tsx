@@ -4,7 +4,7 @@ import { MentorsPcard,Backcard,Services,Review } from '../../../components/index
 
 const page = () => {
   return (
-    <section className='w-full  flex pb-16 flex-col  justify-start items-center pt-16 h-full'>
+    <section className='w-full   flex pb-16 flex-col  justify-start items-center pt-16 h-full'>
         <div className='w-full pl-18 pr-28 flex justify-start border-b-2 border-UIslate-500 py-6  items-start'>
         <Backcard/>
         <MentorsPcard/>

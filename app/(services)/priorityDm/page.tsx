@@ -14,7 +14,7 @@ function page() {
             setisError(false)
         }, 1500);
     }
-       return ( <section className='w-full pt-16  flex pb-16 flex-col  justify-start items-center  h-full'>
+       return ( <section className='w-full  pt-16  flex pb-16 flex-col  justify-start items-center  h-full'>
             {isError&&<Errorpop />}
             <div className='w-full pl-18 pr-28  flex  justify-start border-b-2 border-UIslate-500 py-6  items-start'>
                 <Backcard />

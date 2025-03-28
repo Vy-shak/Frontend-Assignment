@@ -27,7 +27,7 @@ const DmEditor = () => {
                 linkOnPaste: true,
             }),
         ],
-        content: '<p>The editor is fully working please do check it out</p>',
+        content: '<p>The editor is functional. Feel free to check it out.✨</p>',
         editorProps: {
             attributes: {
                 class: "bg-UIslate-50  border-black w-full h-72 p-4 rounded-b-xl border-t-1 border-2"

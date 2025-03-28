@@ -6,7 +6,7 @@ import { Button } from '../../../components/index'
 
 function page() {
     return (
-        <section className='w-full pl-18   flex pb-16 flex-col      justify-start items-center pt-16 h-full'>
+        <section className='w-full pl-18    flex pb-16 flex-col      justify-start items-center pt-16 h-full'>
             <div className='w-full flex pr justify-start border-b-2 border-UIslate-500 py-6 pr-18 items-start'>
                 <Backcard />
                 <div className='w-full flexStart gap-y-4 flex-col'>
