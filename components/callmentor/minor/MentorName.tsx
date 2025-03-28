@@ -3,11 +3,9 @@ import React from 'react'
 import useMentorStore from '@/lib/states/useMentordata'
 import { VerifyIcon } from '../../../public/index'
 import Image from 'next/image'
-import useDataMissing from '@/app/hooks/DataMissing'
 
 function MentorName() {
     const {mentor} = useMentorStore()
-    useDataMissing(mentor)
     
   return (
     <div className='flexSide gap-x-2 w-full'>

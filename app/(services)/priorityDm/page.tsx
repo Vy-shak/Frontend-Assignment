@@ -1,6 +1,6 @@
 import React from 'react'
-import { Backcard, Guidance, MentorName } from '../../components/index'
-import { guidanceData } from '../utils/dummyData/calldata'
+import { Backcard, Guidance, MentorName } from '../../../components/index'
+import { guidanceData } from '../../utils/dummyData/calldata'
 import DmEditor from '@/components/textEditor/Dmeditor'
 
 function page() {

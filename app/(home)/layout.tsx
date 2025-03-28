@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
-import "./globals.css";
-import { Sidebar,Navbar } from "../components/index";
+import "../globals.css";
+import { Sidebar,Navbar } from "../../components/index";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dmSans.variable} antialiased  flexStart w-full h-full`}
+        className={`${dmSans.variable} antialiased flexStart w-full h-full`}
       >
         <Sidebar/>
         <Navbar/>

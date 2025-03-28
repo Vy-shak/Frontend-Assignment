@@ -1,7 +1,7 @@
 import React from 'react'
-import { Guidance, Backcard, MentorName, Slot,Timezone } from '../../components/index'
-import { guidanceData } from '../utils/dummyData/calldata'
-import { Button } from '../../components/index'
+import { Guidance, Backcard, MentorName, Slot,Timezone } from '../../../components/index'
+import { guidanceData } from '../../utils/dummyData/calldata'
+import { Button } from '../../../components/index'
 
 
 function page() {

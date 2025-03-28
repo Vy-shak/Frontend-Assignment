@@ -10,7 +10,6 @@ import useDataMissing from '@/app/hooks/DataMissing'
 
 function MentorsPcard() {
     const { mentor } = useMentorStore();
-    useDataMissing(mentor)
 
     
     return (

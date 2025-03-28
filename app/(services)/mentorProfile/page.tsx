@@ -1,5 +1,5 @@
 import React from 'react'
-import { MentorsPcard,Backcard,Services,Review } from '../../components/index'
+import { MentorsPcard,Backcard,Services,Review } from '../../../components/index'
 
 
 const page = () => {

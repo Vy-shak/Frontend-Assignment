@@ -1,4 +1,5 @@
 import { create } from "zustand";
+import { persist } from "zustand/middleware";
 import { StaticImageData } from "next/image";
 
 interface MentorCard {
@@ -14,14 +15,20 @@ interface MentorCard {
 type MentorStore = {
   mentor: MentorCard | null;
   setMentor: (mentor: MentorCard) => void;
+  clearMentor: () => void;
 };
 
-const useMentorStore = create<MentorStore>((set) => ({
-  mentor: null,
-  
-  setMentor: (mentor) => set({ mentor }),
-
-  clearMentor: () => set({ mentor: null }),
-}));
+const useMentorStore = create<MentorStore>()(
+  persist(
+    (set) => ({
+      mentor: null,
+      setMentor: (mentor) => set({ mentor }),
+      clearMentor: () => set({ mentor: null }),
+    }),
+    {
+      name: "mentor-storage", 
+    }
+  )
+);
 
 export default useMentorStore;

@@ -1,6 +1,6 @@
-import { Mentorsbadge,SearchBar,MentorCard,FilterTabs} from '../components/index'
+import { Mentorsbadge,SearchBar,MentorCard,FilterTabs} from '../../components/index'
 import React from 'react'
-import { Dev,Rishi,Mistry,Jhony } from '../public/index';
+import { Dev,Rishi,Mistry,Jhony } from '../../public/index';
 
 const mentors = [
   {
@@ -51,7 +51,7 @@ const mentors = [
 
 function page() {
   return (
-    <section className='w-full overflow-y-scroll pr-4  flex flex-col justify-start items-center pl-52 pt-16 h-full'>
+    <section className='w-full overflow-y-scroll   flex flex-col justify-start items-center pl-52 pt-16 h-full'>
       <Mentorsbadge />
       <section className='w-full gap-y-10  scroll-smooth flex px-18 flex-col justify-start items-center'>
         <SearchBar />
