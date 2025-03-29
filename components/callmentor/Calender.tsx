@@ -63,7 +63,7 @@ function Calender() {
                 </div>
                 <div className='grid w-full gap-3 cursor-pointer grid-rows-6 grid-cols-7'>
                     {weekDays.map((item) => (
-                        <div className='text-md text-UIslate-500 font-medium' key={item}>{item}</div>
+                        <div className='text-md whitespace-nowrap text-UIslate-500 font-medium' key={item}>{item}</div>
                     ))}
                     {startDay && emptyDates.map((item, index) => (
                         <div className='w-full h-full' key={index}></div>
