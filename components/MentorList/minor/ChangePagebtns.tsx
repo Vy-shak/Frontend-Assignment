@@ -3,7 +3,7 @@ import {ChevronDown} from "lucide-react"
 import Image from 'next/image'
 
 interface btns {
-    type:"Back"|"Next"
+    type:"Back"|"Next",
 }
 
 function ChangePagebtns({type}:btns) {

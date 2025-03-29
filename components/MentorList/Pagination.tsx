@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import MentorCard from './MentorCard'
 import Controlspage from './pagination/Controlspage'
-import { data } from 'motion/react-client'
+import usePagination from '@/lib/states/usePagination'
 
 interface page {
     mentorsData: any[]
@@ -12,7 +12,7 @@ interface page {
 const pageSize = 2
 
 function Pagination({ mentorsData }: page) {
-    const [currentPage,setCurrentPage] = useState(1);
+    const {currentPage} = usePagination()
 
     const startPage = (currentPage-1)*pageSize;
 
@@ -26,7 +26,7 @@ function Pagination({ mentorsData }: page) {
                     <MentorCard key={item.id} rating={item.rating} description={item.description} verified={item.verified} reviews={item.reviews} role={item.role} Name={item.Name} profileImg={item.profileImg} />
                 ))}
             </div>
-            <Controlspage setCurrentpage={setCurrentPage} currentPage={currentPage}/>
+            <Controlspage />
         </div>
     )
 }
