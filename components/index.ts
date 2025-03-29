@@ -22,7 +22,9 @@ import Filtercard from "./MentorList/Filtercard";
 import FilterPopup from "./MentorList/FilterPopup";
 import Filtermenu from "./MentorList/Filtermenu";
 import SidebarMobile from "./MentorList/MobileResponsive/SidebarMobile";
+import Controlpage from "./MentorList/pagination/Controlspage"
+import Pagination from "./MentorList/Pagination";
 
 
 
-export {Button,Sidebar,Navbar, SidebarMobile, MentorCard, Filtermenu, MiniSidebar, FilterPopup, SearchPopup,Filtercard, Filtermodal, Errorpop, Timezone, Calender, Slot, MentorName, Guidance, Review, Services, Backcard, MentorsPcard, FilterTabs, Mentorsbadge,SearchBar}
+export {Button,Sidebar,Navbar, Pagination, Controlpage, SidebarMobile, MentorCard, Filtermenu, MiniSidebar, FilterPopup, SearchPopup,Filtercard, Filtermodal, Errorpop, Timezone, Calender, Slot, MentorName, Guidance, Review, Services, Backcard, MentorsPcard, FilterTabs, Mentorsbadge,SearchBar}
