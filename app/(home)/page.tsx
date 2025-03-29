@@ -53,12 +53,12 @@ function page() {
   return (
     <section className='w-full  pt-16  flex flex-col justify-start items-center  h-full'>
       <Mentorsbadge />
-      <section className='w-full px-4  flex flex-col justify-start items-center'>
+      <section className='w-full md:pr-10 md:pl-24 lg:pr-16 lg:pl-32 xl:pr-20 xl:pl-36 px-4 pt-4  flex flex-col justify-start items-center'>
         <div className='w-full'>
         <SearchBar />
         <FilterTabs/>
         </div>
-        <div className='w-full  flexSide gap-y-4 flex-col'>
+        <div className='w-full pt-8  flexSide gap-y-4 flex-col'>
           {mentors.map((item)=>(
             <MentorCard key={item.id} rating={item.rating} description={item.description} verified={item.verified} reviews={item.reviews}  role={item.role} Name={item.Name} profileImg={item.profileImg}/>
           ))}

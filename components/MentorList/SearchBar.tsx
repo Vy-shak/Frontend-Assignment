@@ -80,12 +80,12 @@ function SearchBar() {
         </div>
         {searchOn&&<SearchPopup history={history} />}
       </div>
-      <div className='w-fit border-2  border-UIslate-300 cursor-pointer bg-white py-2 px-4 rounded-md'>
+      <div className='w-fit md:hidden border-2  border-UIslate-300 cursor-pointer bg-white py-2 px-4 rounded-md'>
       <SlidersHorizontal size={20} />
       </div>
       <div className='w-fit hidden md:flex justify-center items-center gap-x-4 h-fit'>
         {filter.map((item) => (
-          <div key={item.id} className='flexStart gap-y-3 flex-col'>
+          <div key={item.id} className='md:flex hidden justify-start items-start gap-y-3 flex-col'>
             <Filtercard type={item.type} />
             {filterType == item.type ? <FilterPopup constant={item.menus} /> : null}
           </div>

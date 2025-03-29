@@ -7,10 +7,10 @@ interface rating {
     reviews: number
 }
 
-function Rating({ rating, reviews }: rating) {
+function Rating2({ rating, reviews }: rating) {
     const RatingArray = Array.from({ length: 5 }, (_, i) => i + 1);
     return (
-        <div style={{ backgroundColor: "hsla(215, 22%, 27%, 0.4)" }} className='w-full relative hidden md:flex gap-x-2 px-4 -mt-6 py-1 z-10  justify-start items-center rounded-t-0  rounded-b-lg'>
+        <div  className='w-full relative flex md:hidden gap-x-2   py-1 z-10  justify-start items-center '>
             <div className='flexSide space-x-1'>
                 {RatingArray.map((item) => {
                     if (item <= rating) {
@@ -20,9 +20,9 @@ function Rating({ rating, reviews }: rating) {
                     }
                 })}
             </div>
-            <span className='text-white font-semibold text-xs whitespace-nowrap'>| {reviews} Reviews</span>
+            <span className='text-UIslate-700 font-semibold text-xs whitespace-nowrap'>| {reviews} Reviews</span>
         </div>
     )
 }
 
-export default Rating
+export default Rating2
