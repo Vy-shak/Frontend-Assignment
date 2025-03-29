@@ -24,4 +24,4 @@ import Filtermenu from "./MentorList/Filtermenu";
 
 
 
-export {Button,Sidebar,Navbar, Filtermenu, MiniSidebar, FilterPopup, SearchPopup,Filtercard, Filtermodal, Errorpop, Timezone, Calender, Slot, MentorName, Guidance, Review, Services, Backcard, MentorCard, MentorsPcard, FilterTabs, Mentorsbadge,SearchBar}
+export {Button,Sidebar,Navbar, MentorCard, Filtermenu, MiniSidebar, FilterPopup, SearchPopup,Filtercard, Filtermodal, Errorpop, Timezone, Calender, Slot, MentorName, Guidance, Review, Services, Backcard, MentorsPcard, FilterTabs, Mentorsbadge,SearchBar}

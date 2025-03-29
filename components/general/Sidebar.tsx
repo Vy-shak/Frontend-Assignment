@@ -1,33 +1,7 @@
 import React from 'react'
 import SidebarMenu from './SidebarMenu'
 import { MentorIcon,BookingIcon,JobIcon,PriorityIcon} from '../../public/index';
-
-const sidebarData = [
-    {
-      id: 1,
-      text: "Mentor",
-      startIcon: MentorIcon,
-      active:true
-    },
-    {
-      id: 2,
-      text: "Job",
-      startIcon: JobIcon,
-      active:false
-    },
-    {
-      id: 3,
-      text: "Booking",
-      startIcon: BookingIcon,
-      active:false
-    },
-    {
-      id: 4,
-      text: "Priority",
-      startIcon: PriorityIcon,
-      active:false
-    },
-  ];
+import { sidebarData } from '@/app/utils/dummyData/sidebar';
 
 
 function Sidebar() {
