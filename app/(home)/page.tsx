@@ -1,7 +1,7 @@
 import { Mentorsbadge,SearchBar,MentorCard,FilterTabs} from '../../components/index'
-import React from 'react'
+import React  from 'react'
 import { Dev,Rishi,Mistry,Jhony } from '../../public/index';
-
+import {Filtermodal} from "../../components/index"
 const mentors = [
   {
     id: 1,
@@ -52,6 +52,7 @@ const mentors = [
 function page() {
   return (
     <section className='w-full  pt-16  flex flex-col justify-start items-center  h-full'>
+      <Filtermodal/>
       <Mentorsbadge />
       <section className='w-full md:pr-10 md:pl-24 lg:pr-16 lg:pl-32 xl:pr-20 xl:pl-36 px-4 pt-4  flex flex-col justify-start items-center'>
         <div className='w-full'>

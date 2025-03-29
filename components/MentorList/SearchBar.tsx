@@ -1,9 +1,8 @@
 "use client"
 import React, { useState } from 'react'
-import Filtercard from './Filtercard'
-import FilterPopup from './FilterPopup';
-import SearchPopup from './SearchPopup';
+import {Filtermodal,SearchPopup,Filtercard,FilterPopup} from "../../components/index"
 import useFilterStore from '@/lib/states/useFilterpop';
+import useFilterModal from '@/lib/states/useFiltermodal';
 import Image from 'next/image';
 import { SearchIcon } from '../../public/index'
 import { useRef } from 'react';
@@ -59,6 +58,7 @@ const filter = [
 function SearchBar() {
   const { filterType } = useFilterStore();
   const searchRef = useRef<HTMLInputElement>(null);
+  const {isOpen,toggle} = useFilterModal()
   const [searchOn,setSearchon] = useState(false)
   const [history,Sethistory] = useState<string[]>([]);
 
@@ -81,7 +81,7 @@ function SearchBar() {
         {searchOn&&<SearchPopup history={history} />}
       </div>
       <div className='w-fit md:hidden border-2  border-UIslate-300 cursor-pointer bg-white py-2 px-4 rounded-md'>
-      <SlidersHorizontal size={20} />
+      <SlidersHorizontal onClick={()=>toggle()} size={20} />
       </div>
       <div className='w-fit hidden md:flex justify-center items-center gap-x-4 h-fit'>
         {filter.map((item) => (
