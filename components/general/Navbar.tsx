@@ -9,8 +9,8 @@ import { Menu } from "lucide-react"
 function Navbar() {
   const [open,setOpen] = useState(false)
   return (
-    <div className="w-full z-40 fixed  px-4 top-0 right-0 gap-x-4 h-16 border-b-2 border-UIslate-200 bg-white flex md:justify-end justify-between items-center ">
-      <div className="md:hidden flex items-center">
+    <div className="w-full z-40 fixed  px-4 top-0 right-0 gap-x-4 h-16 border-b-2 border-UIslate-200 bg-white flex lg:justify-end justify-between items-center ">
+      <div className="lg:hidden flex justify-start items-start">
         <SidebarMobile open={open} setOpen={setOpen}  />
         <Menu className='cursor-pointer' onClick={()=>setOpen(true)} />
       </div>

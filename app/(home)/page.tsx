@@ -1,4 +1,4 @@
-import { Mentorsbadge,SearchBar,MentorCard,FilterTabs,SidebarMobile} from '../../components/index'
+import { Mentorsbadge,SearchBar,MentorCard,FilterTabs,Sidebar} from '../../components/index'
 import React  from 'react'
 import { Dev,Rishi,Mistry,Jhony } from '../../public/index';
 import {Filtermodal} from "../../components/index"
@@ -52,9 +52,10 @@ const mentors = [
 function page() {
   return (
     <section className='w-full  pt-16  flex flex-col justify-start items-center  h-full'>
+      <Sidebar />
       <Filtermodal/>
       <Mentorsbadge />
-      <section className='w-full md:pr-10 md:pl-24 lg:pr-16 lg:pl-32 xl:pr-20 xl:pl-36 px-4 pt-4  flex flex-col justify-start items-center'>
+      <section className='w-full md:pr-10 md:pl-16 lg:pr-14 lg:pl-56 xl:pr-20 xl:pl-64 px-4 pt-4  flex flex-col justify-start items-center'>
         <div className='w-full'>
         <SearchBar />
         <FilterTabs/>

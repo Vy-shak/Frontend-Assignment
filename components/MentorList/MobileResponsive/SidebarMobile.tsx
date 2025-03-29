@@ -22,7 +22,7 @@ function SidebarMobile({setOpen,open}:side) {
               duration: 0.5 
             }
           }}
-          transition={{ type: "spring", stiffness: 300, damping: 30 }} className='w-52 md:hidden z-50 px-8 border-r-2 pt-8 fixed gap-y-4 flex justify-start items-start flex-col top-0 left-0 h-screen bg-white'>
+          transition={{ type: "spring", stiffness: 300, damping: 30 }} className='w-52 lg:hidden  z-50 px-8 border-r-2 pt-8 fixed gap-y-4 flex justify-start items-start flex-col top-0 left-0 h-screen bg-white'>
       <div className='w-full flex justify-end items-center'>
         <X onClick={()=>setOpen(false)}/>
       </div>
