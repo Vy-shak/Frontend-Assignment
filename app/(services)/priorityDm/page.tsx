@@ -24,7 +24,7 @@ function page() {
                     <Guidance id={ResumeData.id} details={ResumeData.details} bulletpoints={ResumeData.bulletpoints} serviceType={ResumeData.serviceType} subHeading={ResumeData.subHeading} />
                 </div>
             </div>
-                {/* <div className='w-full  gap-y-5 pt-6 flexStart  flex-col'>
+                <div className='w-full px-4 md:pr-10 md:pl-24 lg:pr-16 lg:pl-32 xl:pr-20 xl:pl-36  gap-y-5 pt-6 flexStart  flex-col'>
                     <span className='text-xl whitespace-nowrap font-medium text-UIslate-900'>Your question</span>
                     <div className='w-full flexStart'>
                         <DmEditor />
@@ -32,7 +32,7 @@ function page() {
                     <div className='w-full flex justify-end items-center'>
                         <Button className='px-8' onClick={handleClick} variant={"primary"}>Next</Button>
                     </div>
-                </div> */}
+                </div>
         </section>
     )
 }

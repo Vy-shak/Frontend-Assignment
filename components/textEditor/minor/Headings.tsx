@@ -30,7 +30,7 @@ function HeadingComp({ heading, setHeading }: headingdata) {
     return (
         <div className='flex flex-col gap-y-2 justify-start items-center'>
             <div onClick={()=>setIsOpen((prev)=>!prev)} className='w-full cursor-pointer gap-x-6 flex justify-between items-center bg-white'>
-                <span className='font-semibold text-UIslate-500 text-md'>{heading.heading}</span>
+                <span className='font-semibold whitespace-nowrap text-UIslate-500 text-md'>{heading.heading}</span>
                 <Image className={`${isOpen?"rotate-180":null}`} alt='cheveron down' src={CheveronDown} />
             </div>
             {isOpen&&<motion.div initial={{ opacity: 0, y: -20, scale: 0.95 }}
