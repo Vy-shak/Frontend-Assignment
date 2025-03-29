@@ -4,6 +4,7 @@ import Image, { StaticImageData } from 'next/image'
 import { Button } from '../ui/button'
 import { VerifyIcon } from '../../public/index'
 import Rating from './minor/Rating'
+import NameRole from './minor/NameRole'
 import Link from 'next/link'
 import useMentorStore from '@/lib/states/useMentordata'
 
@@ -17,44 +18,37 @@ interface mentorCard {
   description: string
 }
 
-function MentorCard({ profileImg, rating, reviews, Name, role, verified, description}: mentorCard) {
-  const {setMentor} = useMentorStore();
+function MentorCard({ profileImg, rating, reviews, Name, role, verified, description }: mentorCard) {
+  const { setMentor } = useMentorStore();
 
-  const handleClick = ()=>{
-    setMentor({  profileImg,
+  const handleClick = () => {
+    setMentor({
+      profileImg,
       rating,
       reviews,
       Name,
       role,
       verified,
-      description})
+      description
+    })
   }
-  
+
   return (
     <Link href={"/mentorProfile"} className='w-full'>
-        <div onClick={handleClick} className='w-full cursor-pointer flex justify-between items-stretch bg-white outline-1 outline-UIslate-300 rounded-lg px-6 py-6'>
-      <div className='flex gap-x-5 justify-between items-start w-full'>
-         <div className='flexStart min-w-52 flex-col'>
-         <Image alt='profileImg' className='h-full w-full  rounded-lg object-contain ' src={profileImg} />
-         <Rating reviews={reviews} rating={rating} />
-         </div>
-        <div className='flex justify-stretch items-center w-full h-full gap-y-3  flex-col'>
-          <div className='w-full flex justify-between items-start '>
-            <div className='flexStart gap-y-1 flex-col w-full'>
-              <div className='flexCenter gap-x-2 w-fit'>
-                <span className='font-semibold text-UIslate-900 text-xl'>{Name}</span>
-                {verified&&<Image alt='verify icon' src={VerifyIcon} />}
-              </div>
-              <span className='font-medium text-UIslate-700 text-lg'>{role}</span>
+      <div onClick={handleClick} className='w-full cursor-pointer flex justify-between items-stretch bg-white outline-1 outline-UIslate-300 rounded-lg p-3'>
+        <div className='flex gap-y-3 flex-col gap-x-5 justify-between items-start w-full'>
+          <div className='flex w-full gap-x-3 justify-start items-start'>
+            <div className='flexStart w-32 flex-col'>
+              <Image alt='profileImg' className='h-full w-full  rounded-lg object-contain ' src={profileImg} />
+              <Rating reviews={reviews} rating={rating} />
             </div>
-            <Button variant={"primary"}>View profile</Button>
+            <NameRole verified={verified} Name={Name} role={role} />
           </div>
-          <div className='w-full h-full flex justify-stretch flex-col items-start  bg-UIslate-100 rounded-lg p-2'>
-            <p className='font-semibold text-UIslate-700 text-sm'>{description}</p>
+          <div className='w-full  h-fit overflow-hidden flex justify-stretch flex-col items-start  bg-UIslate-100 rounded-lg p-2'>
+            <p className='font-semibold text-UIslate-700 text-xs'>{description}</p>
           </div>
         </div>
       </div>
-    </div>
     </Link>
   )
 }

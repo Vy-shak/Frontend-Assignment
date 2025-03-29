@@ -7,6 +7,7 @@ import useFilterStore from '@/lib/states/useFilterpop';
 import Image from 'next/image';
 import { SearchIcon } from '../../public/index'
 import { useRef } from 'react';
+import {SlidersHorizontal} from "lucide-react"
 
 interface menu {
   id: number,
@@ -71,15 +72,18 @@ function SearchBar() {
   }
 
   return (
-    <section className='w-full flex py-5 justify-between items-center bg-white'>
+    <section className='w-full flex  justify-between items-center bg-white'>
       <div className='flexStart w-full bg-white'>
-        <div className='w-fit flexCenter h-fit'>
-          <Image className='relative -right-6' alt='search icon' src={SearchIcon} />
-          <input onBlur={handleHistory}  onFocus={()=>setSearchon(true)} ref={searchRef}  className='w-72 px-6 rounded py-1 placeholder:text-xs placeholder:font-normal placeholder:text-UIslate-400 outline-1 outline-UIslate-400 bg-UIslate-200' placeholder='Search by name' />
+        <div className='w-fit py-2 rounded flex outline-1 outline-UIslate-400 bg-UIslate-200 justify-start items-center h-fit'>
+          <Image  alt='search icon' src={SearchIcon} />
+          <input type='search' onBlur={handleHistory}  onFocus={()=>setSearchon(true)} ref={searchRef}  className='w-full pr-6 rounded h-full placeholder:text-xs placeholder:font-normal placeholder:text-UIslate-400 ' placeholder='Search by name' />
         </div>
         {searchOn&&<SearchPopup history={history} />}
       </div>
-      <div className='w-fit flexCenter gap-x-4 h-fit'>
+      <div className='w-fit border-2  border-UIslate-300 cursor-pointer bg-white py-2 px-4 rounded-md'>
+      <SlidersHorizontal size={20} />
+      </div>
+      <div className='w-fit hidden md:flex justify-center items-center gap-x-4 h-fit'>
         {filter.map((item) => (
           <div key={item.id} className='flexStart gap-y-3 flex-col'>
             <Filtercard type={item.type} />

@@ -10,8 +10,8 @@ interface rating {
 function Rating({ rating, reviews }: rating) {
     const RatingArray = Array.from({ length: 5 }, (_, i) => i + 1);
     return (
-        <div style={{ backgroundColor: "hsla(215, 22%, 27%, 0.4)" }} className='w-full relative gap-x-2 px-4 -mt-6 py-1 z-10 flexSide rounded-t-0  rounded-b-lg'>
-            <div className='flexSide space-x-2'>
+        <div style={{ backgroundColor: "hsla(215, 22%, 27%, 0.4)" }} className='w-full relative hidden gap-x-2 px-4 -mt-6 py-1 z-10  justify-start items-center rounded-t-0  rounded-b-lg'>
+            <div className='flexSide space-x-1'>
                 {RatingArray.map((item) => {
                     if (item <= rating) {
                         return (
