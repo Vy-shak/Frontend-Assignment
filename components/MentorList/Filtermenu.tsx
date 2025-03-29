@@ -38,9 +38,9 @@ function Filtermenu({ text }: filtermenu) {
     };
 
     return (
-        <div className='md:flex cursor-pointer  min-w-40 items-center justify-start gap-x-2'>
+        <div className='flex cursor-pointer   items-center justify-start gap-x-2'>
             <input onChange={handleCheck} ref={filterRef} name={text} className='rounded-full w-4 h-4' type='checkbox' />
-            <span>{text}</span>
+            <span className='whitespace-nowrap text-UIslate-700 text-sm font-normal'>{text}</span>
         </div>
     )
 }
