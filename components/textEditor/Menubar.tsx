@@ -46,7 +46,7 @@ const Menubar = ({ editor }: EditorContentProps) => {
 
     useEffect(() => {
         if (!editor || !imgUrl) return;
-    
+
         editor.chain().focus()
             .insertContent(
                 `<div class="custom-image-container">
@@ -71,9 +71,8 @@ const Menubar = ({ editor }: EditorContentProps) => {
 
     return (
         <>
-            <div className={`w-full bg-white  border-2 rounded-t-md border-b-0 outline-none border-UIslate-900  flex  justify-between items-center px-4 py-3 gap-x-3`}>
+            <div className={`w-full flex-wrap bg-white  border-2 rounded-t-md border-b-0 outline-none border-UIslate-900  flex  justify-between items-center px-4 py-3 gap-x-3`}>
                 <HeadingComp setHeading={setHeading} heading={Heading} />
-                <div className='w-full flex justify-start items-center flex-wrap'>
                 {toolbarItems.map(({ icon, command, type, id }) => (
                     <div key={id} className={` px-4 cursor-pointer  rounded-xs py-1 ${editor.isActive(type) ? 'bg-UIblue-50 ' : 'bg-none'}`}>
                         <Image
@@ -86,7 +85,6 @@ const Menubar = ({ editor }: EditorContentProps) => {
                 <div className='cursor-pointer' onClick={() => uploadFromdevice(ImageRef)} >
                     <Image alt='fileUpload' src={Uploadimg} />
                     <input onChange={() => selectImg(ImageRef, setimgUrl)} ref={ImageRef} className='hidden' type='file' />
-                </div>
                 </div>
 
             </div>
