@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect } from 'react'
 import { useRef } from 'react'
 import useFilterSelection from '@/lib/states/selectedFilters'
@@ -37,7 +38,7 @@ function Filtermenu({ text }: filtermenu) {
     };
 
     return (
-        <div className='md:flex hidden min-w-40 items-center justify-start gap-x-2'>
+        <div className='md:flex cursor-pointer  min-w-40 items-center justify-start gap-x-2'>
             <input onChange={handleCheck} ref={filterRef} name={text} className='rounded-full w-4 h-4' type='checkbox' />
             <span>{text}</span>
         </div>
