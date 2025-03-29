@@ -23,7 +23,7 @@ function MentorsPcard() {
                     <div className='w-full flex justify-between items-start '>
                         <div className='flex justify-between w-full md:flex-row  flex-col gap-y-2'>
                             <div className='flex flex-col  justify-start items-start w-fit  '>
-                                <div className='flexSide w-fit'>
+                                <div className='flexSide gap-x-2 w-fit'>
                                     <span className='font-semibold text-UIslate-900 text-xl'>{mentor?.Name}</span>
                                     {mentor?.verified && <Image alt='verify icon' src={VerifyIcon} />}
                                 </div>
