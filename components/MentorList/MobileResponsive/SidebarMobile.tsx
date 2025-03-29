@@ -26,7 +26,7 @@ function SidebarMobile({setOpen,open}:side) {
       <div className='w-full flex justify-end items-center'>
         <X onClick={()=>setOpen(false)}/>
       </div>
-      <div className='w-full flexStart flex-col'>
+      <div className='w-full flexStart gap-y-4 flex-col'>
       {sidebarData.map((item)=>(
         <SidebarMenu key={item.id} active={item.active} text={item.text} icon={item.startIcon} />
       ))}

@@ -32,7 +32,7 @@ function Servicebtn({text}:btn) {
         }
     }}
 >
-    <span className={`${activeService==text?"text-UIslate-700":"text-UIslate-500"} text-sm whitespace-nowrap font-medium`}>
+    <span className={`${activeService==text?"text-UIslate-700":"text-UIslate-500"} text-sm xl:w-32 flexCenter whitespace-nowrap font-medium`}>
         {text}
     </span>
 </motion.div>
