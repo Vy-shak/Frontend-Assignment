@@ -35,7 +35,7 @@ function SearchBar() {
       <div className='flexStart w-full bg-white'>
         <div className='w-fit py-2 rounded flex outline-1 outline-UIslate-400 bg-UIslate-200 justify-start items-center h-fit'>
           <Image  alt='search icon' src={SearchIcon} />
-          <input type='search' onBlur={handleHistory}  onFocus={()=>setSearchon(true)} ref={searchRef}  className='w-full pr-6 rounded h-full placeholder:text-xs placeholder:font-normal placeholder:text-UIslate-400 ' placeholder='Search by name' />
+          <input  onBlur={handleHistory}  onFocus={()=>setSearchon(true)} ref={searchRef}  className='w-full pr-6 focus:border-none focus-visible:no-underline rounded h-full placeholder:text-xs placeholder:font-normal placeholder:text-UIslate-400 ' placeholder='Search by name' />
         </div>
         {searchOn&&<SearchPopup history={history} />}
       </div>

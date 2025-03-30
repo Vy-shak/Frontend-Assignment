@@ -1,7 +1,7 @@
-import { Mentorsbadge,SearchBar,MentorCard,FilterTabs,Sidebar,Pagination} from '../../components/index'
+import { Mentorsbadge,SearchBar,MentorCard,FilterTabs,Sidebar,Pagination} from '../../../components/index'
 import React  from 'react'
-import {Filtermodal} from "../../components/index"
-import { mentorsData } from '../utils/dummyData/mentorsData';
+import {Filtermodal} from "../../../components/index"
+import { mentorsData } from '../../utils/dummyData/mentorsData';
 
 
 function page() {

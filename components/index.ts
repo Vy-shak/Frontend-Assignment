@@ -24,7 +24,8 @@ import Filtermenu from "./MentorList/Filtermenu";
 import SidebarMobile from "./MentorList/MobileResponsive/SidebarMobile";
 import Controlpage from "./MentorList/pagination/Controlspage"
 import Pagination from "./MentorList/Pagination";
+import Chatbox from "./messages/Chatbox";
 
 
 
-export {Button,Sidebar,Navbar, Pagination, Controlpage, SidebarMobile, MentorCard, Filtermenu, MiniSidebar, FilterPopup, SearchPopup,Filtercard, Filtermodal, Errorpop, Timezone, Calender, Slot, MentorName, Guidance, Review, Services, Backcard, MentorsPcard, FilterTabs, Mentorsbadge,SearchBar}
+export {Button,Sidebar,Navbar, Chatbox, Pagination, Controlpage, SidebarMobile, MentorCard, Filtermenu, MiniSidebar, FilterPopup, SearchPopup,Filtercard, Filtermodal, Errorpop, Timezone, Calender, Slot, MentorName, Guidance, Review, Services, Backcard, MentorsPcard, FilterTabs, Mentorsbadge,SearchBar}
