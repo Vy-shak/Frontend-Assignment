@@ -36,7 +36,7 @@ function MentorCard({ profileImg, rating, reviews, Name, role, verified, descrip
 
   return (
     <Link href={"/mentorProfile"} className='w-full'>
-      <div onClick={handleClick} className='w-full cursor-pointer flex justify-between items-stretch bg-white outline-1 outline-UIslate-300 rounded-lg p-3'>
+      <div onClick={handleClick} className='w-full z-10 cursor-pointer flex justify-between items-stretch bg-white outline-1 outline-UIslate-300 rounded-lg p-3'>
         <div className='flex gap-y-3 flex-col gap-x-5 justify-between items-start w-full'>
           <div className='flex w-full gap-x-3 justify-start items-start'>
             <div className='flexStart w-40  md:w-60 flex-col'>

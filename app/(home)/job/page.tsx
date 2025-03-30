@@ -19,7 +19,7 @@ function ErrPage() {
   </h2>
   
   <h5 className="text-neutral-500 text-sm sm:text-base font-semibold font-Montserrat mt-2">
-    I am working on this application.this work will be completeted in few days
+  This application is taking shape,Stay tuned for the big reveal!
   </h5>
   
     <Button onClick={()=>Router.back()}  variant={"primary"} size="lg" className="mt-4 sm:mt-6 md:mt-8  lg:mt-10">Go back </Button>

@@ -10,12 +10,12 @@ interface rating {
 function Rating2({ rating, reviews }: rating) {
     const RatingArray = Array.from({ length: 5 }, (_, i) => i + 1);
     return (
-        <div  className='w-full relative flex md:hidden gap-x-2   py-1 z-10  justify-start items-center '>
+        <div  className='w-full relative flex md:hidden gap-x-2 pl-3  py-1 z-0  justify-start items-center '>
             <div className='flexSide space-x-1'>
                 {RatingArray.map((item) => {
                     if (item <= rating) {
                         return (
-                                <Image key={item} alt='starsIcon' src={Stars} />
+                                <Image className='z-10' key={item} alt='starsIcon' src={Stars} />
                         )
                     }
                 })}

@@ -7,7 +7,7 @@ import usePagination from '@/lib/states/usePagination';
 
 function Controlspage() {
     const {currentPage,increase,decrease} = usePagination()
-  const pages = [1,2];
+  const pages = [1,2,3,4,5];
 
   const Nextpage = ()=>{
     if (currentPage>=pages.length) {

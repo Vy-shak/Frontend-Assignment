@@ -31,7 +31,7 @@ function InboxMobile() {
         })}
       </div>
       <div className="w-full gap-x-4  pb-6 flexSide px-4 fixed bottom-0">
-        <Input  className="ml-6 w-lg bg-white focus:border-0 border-2"/>
+        <Input  className="ml-6  bg-white focus:border-0 border-2"/>
         <Button variant={"primary"}>Send</Button>
       </div>
     </div>

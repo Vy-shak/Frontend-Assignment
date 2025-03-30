@@ -9,7 +9,7 @@ interface page {
     mentorsData: any[]
 }
 
-const pageSize = 2
+const pageSize = 4
 
 function Pagination({ mentorsData }: page) {
     const {currentPage} = usePagination()
