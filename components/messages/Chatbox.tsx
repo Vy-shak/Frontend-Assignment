@@ -1,9 +1,12 @@
+"use client"
+
 import NameRole from '../MentorList/minor/NameRole'
 import { StaticImageData } from 'next/image'
 import { CheveronRight, VerifyIcon } from '../../public/index'
 import Image from 'next/image'
 import React from 'react'
 import NotificationIcon from './NotificationIcon'
+import useChatboxStore from '@/lib/states/useMessages'
 
 interface chatbox {
     Profile: StaticImageData,
@@ -14,9 +17,14 @@ interface chatbox {
     Lastmessage: string
 }
 
-function Chatbox({ Profile, Name,  verified, notifications, Lastmessage }: chatbox) {
+function Chatbox({ Profile, Name, role,  verified, notifications, Lastmessage }: chatbox) {
+    const {chatbox,updateChatbox} = useChatboxStore()
+
+    const handleClick = ()=>{
+        updateChatbox({Profile,Name,role,verified})
+    }
     return (
-        <div className='w-full cursor-pointer border-2 flex rounded-md p-2 justify-between bg-white  items-center border-rounded'>
+        <div onClick={handleClick} className='w-full  cursor-pointer border-2 flex rounded-md p-2 justify-between bg-white  items-center border-rounded'>
             <div className='w-fit flexStart gap-x-3'>
                 <Image className='w-16 rounded' alt='profile' src={Profile} />
                 <div className='flexStart flex-col'>

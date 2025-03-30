@@ -27,7 +27,8 @@ import Pagination from "./MentorList/Pagination";
 import Chatbox from "./messages/Chatbox";
 import Inbox from "./messages/Inbox";
 import Chat from "./messages/Chat";
+import Header from "./messages/InboxHeader";
 
 
 
-export {Button,Sidebar,Navbar, Chat, Inbox, Chatbox, Pagination, Controlpage, SidebarMobile, MentorCard, Filtermenu, MiniSidebar, FilterPopup, SearchPopup,Filtercard, Filtermodal, Errorpop, Timezone, Calender, Slot, MentorName, Guidance, Review, Services, Backcard, MentorsPcard, FilterTabs, Mentorsbadge,SearchBar}
+export {Button,Sidebar,Navbar, Header, Chat, Inbox, Chatbox, Pagination, Controlpage, SidebarMobile, MentorCard, Filtermenu, MiniSidebar, FilterPopup, SearchPopup,Filtercard, Filtermodal, Errorpop, Timezone, Calender, Slot, MentorName, Guidance, Review, Services, Backcard, MentorsPcard, FilterTabs, Mentorsbadge,SearchBar}

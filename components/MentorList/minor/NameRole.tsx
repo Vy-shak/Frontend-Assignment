@@ -10,7 +10,7 @@ interface namerole {
 
 function NameRole({Name,role,verified}:namerole) {
   return (
-    <div className='flexStart gap-y-1 flex-col w-full'>
+    <div className='flexStart gap-y-1 pl-6 flex-col w-full'>
     <div className='flexCenter gap-x-2 w-fit'>
       <span className='font-semibold text-UIslate-900 sm:text-xl text-lg'>{Name}</span>
       {verified && <Image alt='verify icon' src={VerifyIcon} />}

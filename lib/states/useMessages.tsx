@@ -7,8 +7,6 @@ interface Chatbox {
   Name: string;
   role: string;
   verified: boolean;
-  notifications: number;
-  Lastmessage: string;
 }
 
 interface ChatboxStore {
@@ -22,8 +20,6 @@ const useChatboxStore = create<ChatboxStore>((set) => ({
     Name: "Jonny Rose",
     role: "Sr. Software Engineer at Google",
     verified: true,
-    notifications: 2,
-    Lastmessage: "Hey, let's schedule our next session!",
   },
 
   updateChatbox: (updates) =>
