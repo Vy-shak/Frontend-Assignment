@@ -4,6 +4,7 @@ import SidebarMenu from '@/components/general/SidebarMenu'
 import { Dispatch,SetStateAction } from 'react'
 import { X } from 'lucide-react'
 import {motion,AnimatePresence} from "motion/react"
+import Link from 'next/link'
 
 interface side {
   open:boolean
@@ -28,7 +29,9 @@ function SidebarMobile({setOpen,open}:side) {
       </div>
       <div className='w-full flexStart gap-y-4 flex-col'>
       {sidebarData.map((item)=>(
-        <SidebarMenu key={item.id} active={item.active} text={item.text} icon={item.startIcon} />
+        <Link key={item.id} className='flexStart w-full' href={item.route}>
+                <SidebarMenu  active={item.active} text={item.text} icon={item.startIcon} />
+        </Link>
       ))}
       </div>
     </motion.div>}

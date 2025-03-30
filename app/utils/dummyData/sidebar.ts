@@ -1,31 +1,31 @@
-import { MentorIcon,JobIcon,BookingIcon,PriorityIcon } from "../../../public/index";
+import { MentorIcon,JobIcon,BookingIcon,PriorityIcon, ClockIcon } from "../../../public/index";
 
 
 const sidebarData = [
   {
     id: 1,
-    text: "Home",
+    text: "Mentor",
     startIcon: MentorIcon,
-    route: "/home",
+    route: "/mentor",
     active: true,
   },
   {
     id: 2,
-    text: "Mentor",
+    text: "job",
     startIcon: JobIcon,
-    route: "/mentor",
-    active: false,
-  },
-  {
-    id: 3,
-    text: "Job",
-    startIcon: BookingIcon,
     route: "/job",
     active: false,
   },
   {
+    id: 3,
+    text: "Booking",
+    startIcon: ClockIcon,
+    route: "/booking",
+    active: false,
+  },
+  {
     id: 4,
-    text: "Messages",
+    text: "Priority DM",
     startIcon: PriorityIcon,
     route: "/messages",
     active: false,

@@ -1,4 +1,6 @@
+"use client"
 import Image, { StaticImageData } from 'next/image'
+import { usePathname } from 'next/navigation'
 import React  from 'react'
 
 interface sidebarMenu {
@@ -8,6 +10,7 @@ interface sidebarMenu {
 }
 
 function SidebarMenu({icon,text,active}:sidebarMenu) {
+  const pathname = usePathname();
   return (
     <div className={`flexSide cursor-pointer gap-x-2 px-2 ${active?"bg-UIslate-200":null} py-2 w-full font-medium rounded h-fit`}>
         <Image alt='sidebarIcon' src={icon}/>

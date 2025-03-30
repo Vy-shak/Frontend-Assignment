@@ -6,6 +6,7 @@ import InboxHeader from "./InboxHeader"
 import { Chatdata } from "@/app/utils/dummyData/Messages"
 import MessageBox from "./MessageBox"
 import useChatboxStore from "@/lib/states/useMessages"
+import { ArrowLeft } from "lucide-react"
 
 function InboxMobile() {
   const { chatbox } = useChatboxStore()
