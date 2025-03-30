@@ -6,8 +6,8 @@ interface Notify {
 
 function NotificationIcon({count}:Notify) {
   return (
-    <div className='w-2 h-2 flexCenter rounded-full bg-red-600'>
-      <span>{count}</span>
+    <div className='w-fit h-fit flexCenter px-2 py-1 rounded-full bg-red-600'>
+      <span className='text-white font-medium text-xs'>{count}</span>
     </div>
   )
 }
