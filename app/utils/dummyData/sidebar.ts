@@ -2,30 +2,34 @@ import { MentorIcon,JobIcon,BookingIcon,PriorityIcon } from "../../../public/ind
 
 
 const sidebarData = [
-    {
-      id: 1,
-      text: "Mentor",
-      startIcon: MentorIcon,
-      active:true
-    },
-    {
-      id: 2,
-      text: "Job",
-      startIcon: JobIcon,
-      active:false
-    },
-    {
-      id: 3,
-      text: "Booking",
-      startIcon: BookingIcon,
-      active:false
-    },
-    {
-      id: 4,
-      text: "Priority",
-      startIcon: PriorityIcon,
-      active:false
-    },
-  ];
+  {
+    id: 1,
+    text: "Home",
+    startIcon: MentorIcon,
+    route: "/home",
+    active: true,
+  },
+  {
+    id: 2,
+    text: "Mentor",
+    startIcon: JobIcon,
+    route: "/mentor",
+    active: false,
+  },
+  {
+    id: 3,
+    text: "Job",
+    startIcon: BookingIcon,
+    route: "/job",
+    active: false,
+  },
+  {
+    id: 4,
+    text: "Messages",
+    startIcon: PriorityIcon,
+    route: "/messages",
+    active: false,
+  },
+];
 
-export{sidebarData}
+export { sidebarData };
