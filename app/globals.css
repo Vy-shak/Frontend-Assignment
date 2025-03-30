@@ -203,9 +203,9 @@
   border: 2px solid red !important;
 } */
 
-/* ::-webkit-scrollbar {
+ ::-webkit-scrollbar {
   width: 12px;
-}
+} 
 
 ::-webkit-scrollbar-track {
   background: transparent;
@@ -236,7 +236,7 @@
 
 .custom-scrollbar::-webkit-scrollbar-track {
   background: transparent;
-} */
+} 
 
 
 .flexCenter {
