@@ -27,7 +27,7 @@ const sidebarData = [
     id: 4,
     text: "Priority DM",
     startIcon: PriorityIcon,
-    route: "/PriorityDM",
+    route: "/Priority",
     active: false,
   },
 ];
