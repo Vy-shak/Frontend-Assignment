@@ -30,7 +30,7 @@ function SidebarMobile({setOpen,open}:side) {
       <div className='w-full flexStart gap-y-4 flex-col'>
       {sidebarData.map((item)=>(
         <Link key={item.id} className='flexStart w-full' href={item.route}>
-                <SidebarMenu  active={item.active} text={item.text} icon={item.startIcon} />
+                <SidebarMenu route={item.route}  active={item.active} text={item.text} icon={item.startIcon} />
         </Link>
       ))}
       </div>

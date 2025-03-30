@@ -6,7 +6,7 @@ const sidebarData = [
     id: 1,
     text: "Mentor",
     startIcon: MentorIcon,
-    route: "/mentor",
+    route: "/Mentor",
     active: true,
   },
   {
@@ -20,14 +20,14 @@ const sidebarData = [
     id: 3,
     text: "Booking",
     startIcon: ClockIcon,
-    route: "/booking",
+    route: "/Booking",
     active: false,
   },
   {
     id: 4,
     text: "Priority DM",
     startIcon: PriorityIcon,
-    route: "/messages",
+    route: "/PriorityDM",
     active: false,
   },
 ];

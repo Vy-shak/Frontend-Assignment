@@ -27,7 +27,7 @@ function Inbox() {
         })}
       </div>
       <div className="w-fit gap-x-4 pl-80 pb-6 flexSide fixed bottom-0">
-        <Input  className="ml-6 w-lg bg-white focus:border-0 border-2"/>
+        <Input  className="ml-6 lg:w-lg xl:w-xl 2xl:w-2xl bg-white focus:border-0 border-2"/>
         <Button variant={"primary"}>Send</Button>
       </div>
     </div>

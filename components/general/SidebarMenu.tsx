@@ -7,12 +7,14 @@ interface sidebarMenu {
     icon:StaticImageData,
     text:string
     active:boolean
+    route:string
 }
 
-function SidebarMenu({icon,text,active}:sidebarMenu) {
+function SidebarMenu({icon,text,route}:sidebarMenu) {
   const pathname = usePathname();
+  console.log(pathname)
   return (
-    <div className={`flexSide cursor-pointer gap-x-2 px-2 ${active?"bg-UIslate-200":null} py-2 w-full font-medium rounded h-fit`}>
+    <div className={`flexSide cursor-pointer gap-x-2 px-2 ${pathname==route?"bg-UIslate-200":null} py-2 w-full font-medium rounded h-fit`}>
         <Image alt='sidebarIcon' src={icon}/>
         <span className='text-sm flex  text-UIslate-900 font-medium'>{text}</span>
     </div>
