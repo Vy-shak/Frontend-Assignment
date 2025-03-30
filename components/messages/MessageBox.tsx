@@ -14,7 +14,7 @@ function MessageBox({ Profile, content,sender}: messageBox) {
     return (
         <div className={`w-full flex items-start ${sender=="You"?"justify-end":"justify-start"}`}>
             <div className={`w-fit gap-x-2 ${sender=="You"?"flex-row":"flex-row-reverse"} h-fit flex justify-center items-end`}>
-                <div className='p-2 max-w-72 rounded border-2 flexStart'>
+                <div className={`p-2 max-w-72 rounded ${sender=="You"?"border-r-4 !border-r-UIslate-700":"border-l-4 !border-l-UIslate-700"}  border-2 flexStart`}>
                     <p>{content}</p>
                 </div>
                 {sender=="You"?<Image  className='rounded w-8' alt='profile' src={Profile} />:<Image className='rounded w-8' alt='profile' src={chatbox.Profile} />}
