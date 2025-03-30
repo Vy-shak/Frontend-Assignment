@@ -1,7 +1,7 @@
 # Frontend Assignment - CallMentor
 
 ## Live Demo
-🔗 [CallMentor](https://frontend-assignment-seven-ecru.vercel.app/callmentor)
+🔗 [CallMentor](https://frontend-assignment-seven-ecru.vercel.app/)
 
 ## Repository
 📂 [GitHub Repository](https://github.com/Vy-shak/Frontend-Assignment)
