@@ -16,7 +16,7 @@ interface chatbox {
 
 function Chatbox({ Profile, Name,  verified, notifications, Lastmessage }: chatbox) {
     return (
-        <div className='w-full border-2 flex rounded-md p-2 justify-between bg-white  items-center border-rounded'>
+        <div className='w-full cursor-pointer border-2 flex rounded-md p-2 justify-between bg-white  items-center border-rounded'>
             <div className='w-fit flexStart gap-x-3'>
                 <Image className='w-16 rounded' alt='profile' src={Profile} />
                 <div className='flexStart flex-col'>
