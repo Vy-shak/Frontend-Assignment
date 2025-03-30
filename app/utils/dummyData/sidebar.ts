@@ -20,7 +20,7 @@ const sidebarData = [
     id: 3,
     text: "Booking",
     startIcon: ClockIcon,
-    route: "/Booking",
+    route: "/booking",
     active: false,
   },
   {
