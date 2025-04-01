@@ -1,9 +1,10 @@
 "use client"
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import MentorCard from './MentorCard'
 import Controlspage from './pagination/Controlspage'
 import usePagination from '@/lib/states/usePagination'
+import { useRouter } from 'next/navigation'
 
 interface page {
     mentorsData: any[]
@@ -13,6 +14,11 @@ const pageSize = 4
 
 function Pagination({ mentorsData }: page) {
     const {currentPage} = usePagination()
+    const Router = useRouter();
+
+    useEffect(()=>{
+        Router.push("#top")
+    },[currentPage])
 
     const startPage = (currentPage-1)*pageSize;
 
