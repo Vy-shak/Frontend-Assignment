@@ -16,7 +16,7 @@ function MentorsPcard() {
         <div className='w-full cursor-pointer flex justify-between items-stretch bg-white py-6'>
             <div className='flex flex-col md: md:flex-row gap-y-3 gap-x-6 justify-between items-start w-full'>
                 <div className='flexStart min-w-52 flex-col'>
-                    {mentor?.profileImg && <Image alt='profileImg' className='h-full w-full  rounded-lg object-contain ' src={mentor.profileImg} />}
+                    {mentor?.profileImg && <Image alt='profileImg' className='h-full max-w-52 w-full  rounded-lg object-contain ' src={mentor.profileImg} />}
                     {mentor?.rating && mentor.reviews && <Rating reviews={mentor?.reviews} rating={mentor?.rating} />}
                 </div>
                 <div className='flex justify-start items-center w-full h-full gap-y-4  flex-col'>
