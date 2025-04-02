@@ -1,6 +1,7 @@
 "use client"
-import React, { useState } from 'react'
-import {Filtermodal,SearchPopup,Filtercard,FilterPopup} from "../../components/index"
+import React, { lazy, useState } from 'react'
+import dynamic from 'next/dynamic';
+import {Filtercard} from "../../components/index"
 import useFilterStore from '@/lib/states/useFilterpop';
 import useFilterModal from '@/lib/states/useFiltermodal';
 import Image from 'next/image';
@@ -8,6 +9,9 @@ import { SearchIcon } from '../../public/index'
 import { useRef } from 'react';
 import {SlidersHorizontal} from "lucide-react"
 import { filterData } from '@/app/utils/dummyData/filter';
+
+const SearchPopup = dynamic(()=>import("../../components/MentorList/SearchPopup"))
+const FilterPopup = dynamic(()=>import("../../components/MentorList/FilterPopup"))
 
 interface menu {
   id: number,
