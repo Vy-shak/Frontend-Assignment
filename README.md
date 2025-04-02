@@ -14,7 +14,7 @@
 - ⚠️ **Custom Error Pages** – Provides a better user experience.
 
 ## Technologies Used
-- **React.js** – Frontend framework
+- **Next.js** – Frontend framework
 - **Tailwind CSS** – Styling
 - **Figma** – UI/UX design
 - **Vercel** – Deployment
