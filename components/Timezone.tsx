@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect } from 'react'
+import React  from 'react'
 import { CheveronDown } from '../public/index'
 import Image from 'next/image'
 import TimeDropdown from './TimeDropdown'

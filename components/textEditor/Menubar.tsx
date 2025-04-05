@@ -6,7 +6,7 @@ import HeadingComp from './minor/Headings'
 import { useRef } from 'react'
 import { Editor, EditorContentProps, } from '@tiptap/react'
 import Image, { StaticImageData } from 'next/image'
-import { Boldicon, BulletIcon, Photoicon, NumberListicon, Link, ImojiIcon, Uploadimg, UploadVideo, ItalicIcon, Underlineicon, Quoteicon, StrikeIcon } from '../../public/index'
+import { Boldicon, BulletIcon, NumberListicon, Link, ImojiIcon, Uploadimg, UploadVideo, ItalicIcon, Underlineicon, Quoteicon, StrikeIcon } from '../../public/index'
 import { addLink } from './utils/addLink'
 
 type Level = 1 | 2 | 3 | 4 | 5 | 6

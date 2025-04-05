@@ -1,5 +1,5 @@
 import React from 'react'
-import { Guidance, Backcard, MentorName, Slot, Timezone, MiniSidebar } from '../../../components/index'
+import { Guidance, Backcard, MentorName, Slot,  MiniSidebar } from '../../../components/index'
 import { guidanceData } from '../../utils/dummyData/calldata'
 import { Button } from '../../../components/index'
 

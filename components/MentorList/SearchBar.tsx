@@ -1,5 +1,5 @@
 "use client"
-import React, { lazy, useState } from 'react'
+import React, {  useState } from 'react'
 import dynamic from 'next/dynamic';
 import {Filtercard} from "../../components/index"
 import useFilterStore from '@/lib/states/useFilterpop';
@@ -13,15 +13,12 @@ import { filterData } from '@/app/utils/dummyData/filter';
 const SearchPopup = dynamic(()=>import("../../components/MentorList/SearchPopup"))
 const FilterPopup = dynamic(()=>import("../../components/MentorList/FilterPopup"))
 
-interface menu {
-  id: number,
-  text: string,
-}
+
 
 function SearchBar() {
   const { filterType } = useFilterStore();
   const searchRef = useRef<HTMLInputElement>(null);
-  const {isOpen,toggle} = useFilterModal()
+  const {toggle} = useFilterModal()
   const [searchOn,setSearchon] = useState(false)
   const [history,Sethistory] = useState<string[]>([]);
 

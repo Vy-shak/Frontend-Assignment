@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect } from 'react'
+import React  from 'react'
 import SessionNo from './minor/SessionNo'
 import SocialHandle from './minor/SocialHandle'
 import Image from 'next/image'

@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect  } from 'react'
 import MentorCard from './MentorCard'
 import Controlspage from './pagination/Controlspage'
 import usePagination from '@/lib/states/usePagination'

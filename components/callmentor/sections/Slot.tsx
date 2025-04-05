@@ -1,7 +1,6 @@
 import React from 'react'
 import Calender from '../Calender'
 import Timeslot from '../Timeslot'
-import { div } from 'motion/react-client'
 import Timezone from '@/components/Timezone'
 
 function Slot() {

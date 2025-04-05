@@ -1,6 +1,5 @@
 import React from 'react'
 import SidebarMenu from './SidebarMenu'
-import { MentorIcon,BookingIcon,JobIcon,PriorityIcon} from '../../public/index';
 import { sidebarData } from '@/app/utils/dummyData/sidebar';
 import Link from 'next/link';
 

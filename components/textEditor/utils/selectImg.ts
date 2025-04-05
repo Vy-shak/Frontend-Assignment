@@ -1,8 +1,9 @@
+import  { Dispatch, SetStateAction } from "react";
+import { RefObject } from "react";
 
 
 
-
-const selectImg = async (Ref:any,setImgUrl:any) => {
+const selectImg = async (Ref:RefObject<HTMLInputElement | null>,setImgUrl:Dispatch<SetStateAction<string>>) => {
     const files = Ref.current?.files;
     if (!files) {
         console.log("files is not present");
@@ -20,7 +21,7 @@ const selectImg = async (Ref:any,setImgUrl:any) => {
     setImgUrl(ImageUrl)
 }
 
-const uploadFromdevice = (Ref:any) => {
+const uploadFromdevice = (Ref:RefObject<HTMLInputElement | null>) => {
     Ref.current?.click();
 };
 

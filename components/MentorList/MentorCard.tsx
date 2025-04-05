@@ -2,7 +2,6 @@
 import React from 'react'
 import Image, { StaticImageData } from 'next/image'
 import { Button } from '../ui/button'
-import { VerifyIcon } from '../../public/index'
 import Rating from './minor/Rating'
 import Rating2 from './minor/Rating2'
 import NameRole from './minor/NameRole'

@@ -1,4 +1,4 @@
-import { MentorIcon,JobIcon,BookingIcon,PriorityIcon, ClockIcon } from "../../../public/index";
+import { MentorIcon,JobIcon,PriorityIcon, ClockIcon } from "../../../public/index";
 
 
 const sidebarData = [

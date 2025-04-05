@@ -1,5 +1,5 @@
 "use client"
-import React, { Dispatch,SetStateAction } from 'react'
+import React  from 'react'
 import ChangePagebtns from '../minor/ChangePagebtns'
 import PageNum from '../minor/PageNum'
 import usePagination from '@/lib/states/usePagination';

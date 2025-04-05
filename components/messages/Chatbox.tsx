@@ -1,6 +1,5 @@
 "use client"
 import { Dispatch } from 'react'
-import NameRole from '../MentorList/minor/NameRole'
 import { StaticImageData } from 'next/image'
 import { CheveronRight, VerifyIcon } from '../../public/index'
 import Image from 'next/image'
@@ -19,7 +18,7 @@ interface chatbox {
 }
 
 function Chatbox({ Profile, Name, role, setisOpen  ,verified, notifications, Lastmessage }: chatbox) {
-    const {chatbox,updateChatbox} = useChatboxStore()
+    const {updateChatbox} = useChatboxStore()
 
     const handleClick = ()=>{
         setisOpen(true)

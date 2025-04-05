@@ -5,7 +5,7 @@ import { Backcard, Guidance, MentorName, Errorpop, MiniSidebar, Button } from '.
 import { ResumeData } from '../../utils/dummyData/calldata'
 import DmEditor from '@/components/textEditor/Dmeditor'
 
-function page() {
+function DM() {
     const [isError, setisError] = useState(false);
 
     const handleClick = () => {
@@ -38,4 +38,4 @@ function page() {
     )
 }
 
-export default page
+export default DM

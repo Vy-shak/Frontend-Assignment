@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import { motion, AnimatePresence } from "motion/react"
-import { useRef } from 'react'
 import Filtermenu from './Filtermenu'
 
 interface menu {
@@ -14,13 +13,6 @@ interface popup {
 }
 
 function FilterPopup({ constant }: popup) {
-    const filterRef = useRef<HTMLInputElement>(null);
-
-    const handleCheck = () => {
-        if (filterRef.current) {
-          console.log("Checkbox value:", filterRef.current.name);
-        }
-      };
 
 
     return (

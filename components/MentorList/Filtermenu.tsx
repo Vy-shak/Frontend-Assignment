@@ -11,6 +11,7 @@ function Filtermenu({ text }: filtermenu) {
     const filterRef = useRef<HTMLInputElement>(null);
     const { addFilter, removeFilter, selectedFilter } = useFilterSelection();
 
+
     useEffect(() => {
         if (selectedFilter && selectedFilter.includes(text)) {
             if (filterRef.current) {

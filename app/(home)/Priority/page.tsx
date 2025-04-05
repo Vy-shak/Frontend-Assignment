@@ -1,6 +1,5 @@
 import React from 'react'
-import { Sidebar, Chatbox,MiniSidebar,Inbox,Chat,Header } from '../../../components/index'
-import { mentorsList } from '../../utils/dummyData/Messages'
+import { MiniSidebar,Inbox,Chat,} from '../../../components/index'
 
 function page() {
   return (

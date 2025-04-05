@@ -1,6 +1,6 @@
 
 import "../globals.css";
-import { Navbar,MiniSidebar } from "../../components/index";
+import { Navbar, } from "../../components/index";
 import { DM_Sans } from "next/font/google";
 
 const dmSans = DM_Sans({

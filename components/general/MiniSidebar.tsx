@@ -1,6 +1,5 @@
 "use client"
 import React from 'react'
-import SidebarMenu from './SidebarMenu'
 import Image from 'next/image';
 import { sidebarData } from '@/app/utils/dummyData/sidebar';
 import Link from 'next/link';

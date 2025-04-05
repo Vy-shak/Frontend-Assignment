@@ -5,7 +5,6 @@ import StarterKit from '@tiptap/starter-kit'
 import Menubar from './Menubar'
 import BulletList from '@tiptap/extension-bullet-list'
 import ListItem from '@tiptap/extension-list-item'
-import Image from '@tiptap/extension-image'
 import Link from '@tiptap/extension-link'
 import Blockquote from '@tiptap/extension-blockquote';
 import "./styless.css"

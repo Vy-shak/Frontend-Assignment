@@ -2,8 +2,6 @@
 import React from 'react'
 import NameRole from '../MentorList/minor/NameRole'
 import useChatboxStore from '@/lib/states/useMessages'
-import Backcard from '../mentorsProfile/minor/Backcard'
-import { div } from 'motion/react-client'
 
 
 function InboxHeader() {
